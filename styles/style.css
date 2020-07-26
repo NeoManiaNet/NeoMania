@@ -1,0 +1,175 @@
+﻿body
+{
+    margin:0px;
+}
+
+.first-main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../resources/images/SpaceX.jpg');
+    background-size: cover;
+}
+
+.black-layer {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index:1;
+    background-color:black;
+    opacity:0.5;
+    filter:blur(2px);
+}
+
+.navbar-container-dark{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 12vh;
+}
+
+/* Navbar dark */
+
+.logo{
+    transition: 0.4s ease-out;
+    transition-property: margin-top;
+    display: inline-block;
+    font-size: 2.2em;
+    margin-top: 3vh;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo img{
+    height: 9vh;
+    transition: 0.4s ease-out;
+    transition-property: height;
+}
+
+.logo div{
+    display: block;
+    margin-top: -7.3vh;
+    margin-left: 100px;
+}
+
+.navbar-dark{
+    display: block;
+    width: 80%;
+    height: 12vh;
+    margin: 0px auto;
+    color: white;
+}
+
+.navbar-dark ul{
+    transition: margin-top 0.4s ease-out;
+    display:  inline-block;
+    float: right;
+    left: 0px;
+    margin-top: 6.7vh;
+    margin-right: 2vw;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.navbar-dark ul li{
+    display: inline-block;
+    margin: 0 1vw;
+    font-size: 2em;
+    font-family: monospace;
+    color: white;
+}
+
+.navbar-dark ul li div:after {
+    transition: width 0.5s ease-out;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0px;
+    padding-top: 5px;
+    border-bottom: 2px solid white;
+}
+
+.navbar-dark ul li div:hover {
+    cursor: pointer;
+}
+
+.navbar-dark ul li div:hover::after {
+    width: 100%;
+}
+
+/* Navbar light */
+
+.navbar-container-light{
+    transition: 0.4s ease-out;
+    transition-property: height, background-color;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 8vh;
+}
+
+.navbar-light .logo{
+    margin-top: 0.5vh;
+}
+
+.navbar-light .logo img{
+    height: 7vh;
+}
+
+.navbar-light .logo div{
+    display: block;
+    margin-top: -6.3vh;
+    margin-left: 80px;
+}
+
+.navbar-light{
+    display: block;
+    width: 80%;
+    height:8vh;
+    margin: 0px auto;
+    color: black;
+}
+
+.navbar-light ul{
+    transition: margin-top 0.4s ease-out;
+    display: inline-block;
+    float: right;
+    left: 0px;
+    margin-top: 2.3vh;
+    list-style-type: none;
+}
+
+.navbar-light ul li{
+    display: inline-block;
+    margin: 0 1vw;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
+}
+
+.navbar-light ul li div:after {
+    transition: width 0.5s ease-out;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0px;
+    padding-top: 3px;
+    border-bottom: 2px solid black;
+}
+
+.navbar-light ul li div:hover {
+    cursor: pointer;
+}
+
+.navbar-light ul li div:hover::after {
+    width: 100%;
+}
+
+.second-main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../resources/images/Siora.jpg');
+    background-size: cover;
+}
