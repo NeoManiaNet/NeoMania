@@ -12,7 +12,7 @@ window.onload = function(){
 		}
 
 		index++;
-	},3000);
+	},10000);
 }
 
 window.onscroll = function() 
