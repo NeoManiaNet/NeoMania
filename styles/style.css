@@ -33,6 +33,7 @@
     transition-property: margin-top;
     display: inline-block;
     font-size: 2.2em;
+    font-family: bavro-regular;
     margin-top: 3vh;
 }
 
@@ -165,9 +166,40 @@
     width: 100%;
 }
 
+.buttons-container{
+    color: white;
+    font-size: 3.5em;
+}
+
+.buttons-container div {
+    transition: opacity 0.4s ease-out;
+    opacity: 0.5;
+    width: auto;
+    position: absolute;
+}
+
+.buttons-container div:hover {
+    opacity: 1;
+}
+
+.buttons-container div div {
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#left-button {
+    margin: 50vh 0 50vh 10vw;
+}
+
+#right-button{
+    right: 0px;
+    margin: 50vh 10vw 50vh 0vw;
+}
+
 .carousel{
     transition: margin-left 1s ease-in-out;
-    overflow: hidden;;
+    overflow: hidden;
     display: flex;
     width: 300vw;
     height: 100vh;
@@ -177,6 +209,8 @@
     display: inline-block;
     height: 100vh;
     width:100vw;
+    color:white;
+    font-family: exo;
 }
 
 .carousel-item div{
@@ -189,7 +223,20 @@
 
 .carousel-item div h2{
     font-size: 3em;
-    color: white;
+    font-weight: bold;
+    margin-bottom:0.4em;
+}
+
+.carousel-item div hr{
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left: 0em;
+    width: 40%;
+}
+
+.carousel-item div p{
+    margin-top: 0.4em;
+    font-size: 1.6em;
 }
 
 #carousel-item-1{
@@ -203,7 +250,7 @@
 }
 
 #carousel-item-3{
-    background-image: url('../resources/images/Siora.jpg');
+    background-image: url('../resources/images/connect.jpg');
     background-size: cover;
 }
 
@@ -272,6 +319,7 @@
 }
 
 .footer-bottom-container a{
+    transition: color 0.3s;
     text-decoration: none;
     color: white;
     font-weight: lighter;

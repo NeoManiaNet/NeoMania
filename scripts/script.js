@@ -1,18 +1,37 @@
-window.onload = function(){
-	var index = 1;
+var app = {
+	slideIndex: 0,
+	slideInterval: null,
+	slide: function (toRight){
+			if(toRight === true)
+				app.slideIndex++;
+			else
+				app.slideIndex--;
 
-	setInterval(function(){
-		if(index === 1)
-			document.getElementById("carousel").style.marginLeft = "-100vw";
-		else if (index === 2)
-			document.getElementById("carousel").style.marginLeft = "-200vw";
-		else {
-			document.getElementById("carousel").style.marginLeft = "0";
-			index = 0;
+			if(app.slideIndex === 3)
+				app.slideIndex = 0;
+			else if (app.slideIndex === -1)
+				app.slideIndex = 2;
+
+			if(app.slideIndex === 1)
+				document.getElementById("carousel").style.marginLeft = "-100vw";
+			else if (app.slideIndex === 2)
+				document.getElementById("carousel").style.marginLeft = "-200vw";
+			else {
+				document.getElementById("carousel").style.marginLeft = "0";
 		}
+	},
+	resetInterval: function ResetInterval(){
+			clearInterval(app.slide);
 
-		index++;
-	},10000);
+			setInterval(function(){
+				app.slide(true);
+			},10000);
+	}
+};
+
+
+window.onload = function(){
+	app.resetInterval();
 }
 
 window.onscroll = function() 
@@ -25,3 +44,5 @@ window.onscroll = function()
 	    document.getElementById("navbar").className = "navbar-dark";
 	}
 };
+
+/* functions */

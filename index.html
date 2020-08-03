@@ -7,6 +7,8 @@
         Neo Mania
     </title>
 
+    <link rel="stylesheet" href="styles/icons.min.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
@@ -35,25 +37,46 @@
     </div>
 
     <div class="first-main-container">
+        <!-- Slide buttons-->
+        <div class="buttons-container">
+            <div id="left-button">
+                <div onclick="app.slide(false)">&#10094;</div>
+            </div>
+
+            <div id="right-button">
+                <div onclick="app.slide(true)">&#10095;</div>
+            </div>
+        </div>
+
+        <!-- Slide elements-->
         <div id="carousel" class="carousel">
             <div id="carousel-item-1" class="carousel-item">
                 <div>
                     <h2>We Innovate</h2>
+
+                    <hr/>
+
+                    <p>Always In Chase Of Innovations</p>
                 </div>
             </div>
             <div id="carousel-item-2" class="carousel-item">
                 <div>
                     <h2>We Create</h2>
+
+                    <hr/>
+
+                    <p>We Create The World Of Tomorrow</p>
                 </div>
             </div>
             <div id="carousel-item-3" class="carousel-item">
                 <div>
                     <h2>We Connect</h2>
+
+                    <hr/>
+
+                    <p>???</p>
                 </div>
             </div>
-        </div>
-        <div class="buttons-container">
-            
         </div>
     </div>
 
