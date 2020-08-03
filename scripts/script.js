@@ -25,7 +25,7 @@ var app = {
 
 			setInterval(function(){
 				app.slide(true);
-			},10000);
+			},15000);
 	}
 };
 
