@@ -36,7 +36,7 @@ window.onload = function(){
 
 window.onscroll = function() 
 {
-	if (document.body.scrollTop > 95 || document.documentElement.scrollTop > 95) {
+	if (document.body.scrollTop > 98 || document.documentElement.scrollTop > 98) {
     	document.getElementById("navbar-container").className = "navbar-container-light";
     	document.getElementById("navbar").className = "navbar-light";
 	} else {
