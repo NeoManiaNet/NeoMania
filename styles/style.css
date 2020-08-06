@@ -355,19 +355,19 @@
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
     left: 0vw;
-    width:44vw;
+    width:37vw;
 }
 
 .what-we-do-second-part{
-    margin-top: 11vh;
+    margin-top: 10vh;
     opacity: 0;
     transition-delay: 1.4s;
     transition-property: opacity, margin-top;
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
     position: absolute;
-    left: 31vw;
-    width:44vw;
+    left: 37vw;
+    width:37vw;
 }
 
 .more-about-us{
