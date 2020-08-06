@@ -64,7 +64,7 @@
 
 .navbar-dark ul{
     transition: margin-top 0.4s ease-out;
-    display:  inline-block;
+    display:  block;
     float: right;
     left: 0px;
     margin-top: 6.7vh;
@@ -113,6 +113,7 @@
 
 .navbar-light .logo{
     margin-top: 0.5vh;
+    font-size: 2em;
 }
 
 .navbar-light .logo img{
@@ -121,7 +122,7 @@
 
 .navbar-light .logo div{
     display: block;
-    margin-top: -6.3vh;
+    margin-top: -6.2vh;
     margin-left: 80px;
 }
 
@@ -135,10 +136,10 @@
 
 .navbar-light ul{
     transition: margin-top 0.4s ease-out;
-    display: inline-block;
+    display: block;
     float: right;
     left: 0px;
-    margin-top: 2.3vh;
+    margin-top: 2.7vh;
     list-style-type: none;
 }
 
@@ -311,7 +312,7 @@
 
 .who-we-are{
     opacity: 0;
-    margin-top: 12vh;
+    margin-top: 17vh;
     transition-property: opacity, margin-top;
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
@@ -321,19 +322,21 @@
 }
 
 .who-we-are h3{
-    font-size: 3.5rem;
+    font-size: 3em;
 	font-family: varela-round;
+    margin-bottom: 0vh;
 }
 
 .who-we-are p{
-    font-size: 2rem;
+    font-size: 1.7em;
     font-family: varela-round;
+    margin-top: 2vh;
 }
 
 .what-we-do{
     opacity: 0;
     width: 74vw;
-    margin-top: 46vh;
+    margin-top: 51vh;
     transition-delay: 0.7s;
     transition-property: opacity, margin-top;
     transition-duration: 0.7s;
@@ -343,13 +346,15 @@
 }
 
 .what-we-do h3{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: varela-round;
+    margin-bottom: 0vh;
 }
 
 .what-we-do p{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: varela-round;
+    margin-top: 2vh;
 }
 
 .what-we-do-first-part{
@@ -379,7 +384,7 @@
     color: black;
     text-decoration: none;
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.7em;
     font-family: varela-round;
     bottom: -95vh;
     left: 44.4vw;

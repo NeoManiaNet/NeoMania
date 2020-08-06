@@ -56,16 +56,16 @@ window.onscroll = function()
 	{
 		app.hasAboutLoaded = true;
 
-		document.getElementById("who-we-are").style.marginTop = "5vh";
+		document.getElementById("who-we-are").style.marginTop = "10vh";
 		document.getElementById("who-we-are").style.opacity = "1";
 
-		document.getElementById("what-we-do").style.marginTop = "39vh";
+		document.getElementById("what-we-do").style.marginTop = "44vh";
 		document.getElementById("what-we-do").style.opacity = "1";
 
-		document.getElementById("what-we-do-first-part").style.marginTop = "0vh";
+		document.getElementById("what-we-do-first-part").style.marginTop = "2vh";
 		document.getElementById("what-we-do-first-part").style.opacity = "1";
 
-		document.getElementById("what-we-do-second-part").style.marginTop = "3vh";
+		document.getElementById("what-we-do-second-part").style.marginTop = "2vh";
 		document.getElementById("what-we-do-second-part").style.opacity = "1";
 	}
 
