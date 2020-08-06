@@ -322,10 +322,12 @@
 
 .who-we-are h3{
     font-size: 3.5rem;
+	font-family: varela-round;
 }
 
 .who-we-are p{
     font-size: 2rem;
+    font-family: varela-round;
 }
 
 .what-we-do{
@@ -342,10 +344,12 @@
 
 .what-we-do h3{
     font-size: 3.5rem;
+    font-family: varela-round;
 }
 
 .what-we-do p{
     font-size: 2rem;
+    font-family: varela-round;
 }
 
 .what-we-do-first-part{
@@ -376,6 +380,7 @@
     text-decoration: none;
     position: absolute;
     font-size: 2rem;
+    font-family: varela-round;
     bottom: -95vh;
     left: 44.4vw;
 }
