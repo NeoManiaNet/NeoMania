@@ -75,8 +75,8 @@
 .navbar-dark ul li{
     display: inline-block;
     margin: 0 1vw;
-    font-size: 2em;
-    font-family: monospace;
+    font-size: 1.5em;
+    font-family: varela-round;
     color: white;
 }
 
@@ -145,8 +145,8 @@
 .navbar-light ul li{
     display: inline-block;
     margin: 0 1vw;
-    font-size: 2em;
-    font-family: monospace;
+    font-size: 1.5em;
+    font-family: varela-round;
     color: black;
 }
 
@@ -281,6 +281,7 @@
     width: 90vw;
     text-align: center;
     font-size: 1.6em;
+    font-family: varela-round;
     margin-top: 5vh;
     position: absolute;
     cursor: default;
@@ -338,6 +339,7 @@
     margin:0px;
     color: white;
     font-size: 1.2em;
+    font-family: vazgen;
 }
 
 .footer-container ul li{

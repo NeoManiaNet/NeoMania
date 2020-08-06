@@ -7,3 +7,12 @@
   font-family: exo;
   src: url(../resources/fonts/Exo-VariableFont_wght.ttf);
 }
+
+@font-face {
+  font-family: varela-round;
+  src: url(../resources/fonts/VarelaRound-Regular.ttf);
+}
+@font-face {
+  font-family: Vazgen;
+  src: url(../resources/fonts/IBMPlexSans-Light.ttf);
+}
