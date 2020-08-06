@@ -273,12 +273,13 @@
 }
 
 .about-content{
-    width: 90vw;
+    width: 74vw;
+    height: 100vh;
     margin: 0px auto;
 }
 
 .about-header{
-    width: 90vw;
+    width: 74vw;
     text-align: center;
     font-size: 1.6em;
     font-family: varela-round;
@@ -306,6 +307,77 @@
 .about-header:after {
   left: 0.5em;
   margin-right: -50vw;
+}
+
+.who-we-are{
+    opacity: 0;
+    margin-top: 12vh;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    position: absolute;
+    width:74vw;
+    display: inline-block;
+}
+
+.who-we-are h3{
+    font-size: 3.5rem;
+}
+
+.who-we-are p{
+    font-size: 2rem;
+}
+
+.what-we-do{
+    opacity: 0;
+    width: 74vw;
+    margin-top: 46vh;
+    transition-delay: 0.7s;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    position: absolute;
+    display: inline-block;
+}
+
+.what-we-do h3{
+    font-size: 3.5rem;
+}
+
+.what-we-do p{
+    font-size: 2rem;
+}
+
+.what-we-do-first-part{
+    margin-top: 7vh;
+    opacity: 0;
+    transition-delay: 0.7s;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    left: 0vw;
+    width:37vw;
+}
+
+.what-we-do-second-part{
+    margin-top: 10vh;
+    opacity: 0;
+    transition-delay: 1.4s;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    position: absolute;
+    left: 37vw;
+    width:37vw;
+}
+
+.more-about-us{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    font-size: 2rem;
+    bottom: -95vh;
+    left: 44.4vw;
 }
 
 .third-main-container {
