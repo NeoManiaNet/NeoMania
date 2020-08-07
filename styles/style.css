@@ -369,7 +369,7 @@
 }
 
 .what-we-do-second-part{
-    margin-top: 10vh;
+    margin-top: 12vh;
     opacity: 0;
     transition-delay: 1.4s;
     transition-property: opacity, margin-top;
