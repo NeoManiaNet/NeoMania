@@ -354,7 +354,6 @@
 .what-we-do p{
     font-size: 1.7rem;
     font-family: varela-round;
-    margin-top: 2vh;
 }
 
 .what-we-do-first-part{
@@ -369,7 +368,7 @@
 }
 
 .what-we-do-second-part{
-    margin-top: 12vh;
+    margin-top: 7vh;
     opacity: 0;
     transition-delay: 1.4s;
     transition-property: opacity, margin-top;
