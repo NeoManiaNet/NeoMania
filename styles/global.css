@@ -15,3 +15,15 @@
 .btn:hover::after {
     width: 100%;
 }
+
+.neon-white{
+    color: white;
+    font-family: varela-round;
+    transition: text-shadow 0.4s ease-out;
+    text-shadow: 0.13vw 0vw 0.2vw white;
+  }
+
+.neon-white:hover{
+    text-shadow: 0vw    0vw 1.5vw white;
+    cursor: default;
+}

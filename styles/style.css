@@ -41,7 +41,12 @@
     cursor: pointer;
 }
 
-.logo img{
+.logo a{
+    text-decoration: none;
+    color:white;
+}
+
+.logo a img{
     height: 9vh;
     transition: 0.4s ease-out;
     transition-property: height;
@@ -80,7 +85,12 @@
     color: white;
 }
 
-.navbar-dark ul li div:after {
+.navbar-dark ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-dark ul li a:after {
     transition: width 0.5s ease-out;
     content: "";
     display: block;
@@ -90,11 +100,11 @@
     border-bottom: 2px solid white;
 }
 
-.navbar-dark ul li div:hover {
+.navbar-dark ul li a:hover {
     cursor: pointer;
 }
 
-.navbar-dark ul li div:hover::after {
+.navbar-dark ul li a:hover::after {
     width: 100%;
 }
 
@@ -120,8 +130,9 @@
     height: 7vh;
 }
 
-.navbar-light .logo div{
+.navbar-light .logo a div{
     display: block;
+    color: black;
     margin-top: -6.2vh;
     margin-left: 80px;
 }
@@ -143,6 +154,10 @@
     list-style-type: none;
 }
 
+.selected-item a:after{
+    width: 100% !important;
+}
+
 .navbar-light ul li{
     display: inline-block;
     margin: 0 1vw;
@@ -151,7 +166,12 @@
     color: black;
 }
 
-.navbar-light ul li div:after {
+.navbar-light ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-light ul li a:after {
     transition: width 0.5s ease-out;
     content: "";
     display: block;
@@ -161,11 +181,11 @@
     border-bottom: 2px solid black;
 }
 
-.navbar-light ul li div:hover {
+.navbar-light ul li a:hover {
     cursor: pointer;
 }
 
-.navbar-light ul li div:hover::after {
+.navbar-light ul li a:hover::after {
     width: 100%;
 }
 
@@ -209,6 +229,16 @@
     height: 100vh;
 }
 
+#background-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
 .carousel-item{
     display: inline-block;
     height: 100vh;
@@ -223,6 +253,7 @@
     width:60%;
     margin: auto;
     margin-top: 20vh;
+    z-index: 2;
 }
 
 .carousel-item div h2{
@@ -244,8 +275,7 @@
 }
 
 #carousel-item-1{
-    background-image: url('../resources/images/SpaceX.jpg');
-    background-size: cover;
+    background:transparent;
 }
 
 #carousel-item-2{
@@ -354,7 +384,6 @@
 .what-we-do p{
     font-size: 1.7rem;
     font-family: varela-round;
-    margin-top: 2vh;
 }
 
 .what-we-do-first-part{
@@ -369,7 +398,7 @@
 }
 
 .what-we-do-second-part{
-    margin-top: 10vh;
+    margin-top: 7vh;
     opacity: 0;
     transition-delay: 1.4s;
     transition-property: opacity, margin-top;
@@ -393,7 +422,70 @@
 .third-main-container {
     width: 100%;
     height: 100vh;
-    background-color: gray;
+    overflow: hidden;
+}
+
+.solutions-bg{
+    width: 101vw;
+    height: 101.4vh;
+    margin-left: -1vh;
+    margin-top: -0.3vw;
+    background-image: url(../resources/images/dark.jpg);
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.solutions-content{
+    width: 74vw;
+    height: 100vh;
+    margin: -100vh auto;
+}
+
+.solutions-header{
+    width: 74vw;
+    margin-left: -0.7vw;
+    text-align: center;
+    font-size: 1.6em;
+    font-family: varela-round;
+    margin-top: 5vh;
+    position: absolute;
+    cursor: default;
+}
+
+.solutions-header:before,
+.solutions-header:after{
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 1.5px;
+    position: relative;
+    vertical-align: middle;
+    width: 4vw;
+}
+
+.solutions-header:before {
+  right: 0.5em;
+  margin-left: -50vw;
+}
+
+.solutions-header:after {
+  left: 0.5em;
+  margin-right: -50vw;
+}
+
+
+
+
+
+.more{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    font-size: 1.7em;
+    font-family: varela-round;
+    bottom: -197vh;
+    left: 47vw;
 }
 
 .fourth-main-container {
