@@ -1,3 +1,33 @@
-.first-main-container{
-    background-color: gray;
+.solutions-bg {
+    position: absolute;
+    width: 99.8vw;
+    height: 101.4vh;
+    margin-left: -1.4vh;
+    margin-top: -0.3vw;
+    background-image: url(../resources/images/dark.jpg);
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.header{
+    font-size: 3em;
+    color: white;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.solutions-content{
+    width: 80vw;
+    height: 100vh;
+    margin: 0vh auto; 
+    margin-top: 25vh;
+}
+
+.solutions-white-layer{
+    background: rgba(255,255,255, 0.7);
+    width: 80vw;
+    height: 100vh;
+    margin: 0vh auto; 
 }
