@@ -1,7 +1,11 @@
+.first-main-container{
+    height: 270vh;
+}
+
 .solutions-bg {
     position: absolute;
     width: 99.8vw;
-    height: 101.4vh;
+    height: 271.4vh;
     margin-left: -1.4vh;
     margin-top: -0.3vw;
     background-image: url(../resources/images/dark.jpg);
@@ -20,7 +24,7 @@
 
 .solutions-content{
     width: 80vw;
-    height: 100vh;
+    height: 270vh;
     margin: 0vh auto; 
     margin-top: 25vh;
 }
@@ -28,6 +32,76 @@
 .solutions-white-layer{
     background: rgba(255,255,255, 0.7);
     width: 80vw;
-    height: 100vh;
+    height: 270vh;
     margin: 0vh auto; 
+}
+
+.solutions-image{
+    display: inline-block;
+    width: 30%;
+    height: 15vw;
+    background: green;
+    margin-right: 4vw;
+}
+
+.solution-item{
+    display: flex;
+    padding: 10vw 8vw 0vw 8vw;
+}
+
+.solution-item-content{
+    width: 70%;
+}
+
+.solution-item-content h3{
+    margin: 0px;
+    font-size: 1.85em;
+    font-family: varela-round;
+}
+
+.solution-item-content p{
+    font-size: 1.5em;
+    font-family: varela-round;
+}
+
+.btn-align-right{
+    float: right;
+    margin-right: 1vw;
+}
+
+.solution-item-content div{
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: varela-round;
+    font-weight: bold;
+}
+
+.benefits-container{
+    margin:8vw;
+    margin-top:20vh;
+}
+
+.benefits-container h3{
+    font-size: 2.2em;
+    font-family: varela-round;
+    font-weight: bold;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-container div{
+    width: 33.3%;
+    margin-right: 2vw;
+}
+
+.flex-container div h4{
+    font-size: 1.6em;
+    font-family: varela-round;
+}
+
+.flex-container div p{
+    font-size: 1.3em;
+    font-family: varela-round;
 }

@@ -485,7 +485,7 @@
     font-size: 1.7em;
     font-family: varela-round;
     bottom: -197vh;
-    left: 47vw;
+    left: 45.5vw;
 }
 
 .fourth-main-container {
@@ -493,6 +493,18 @@
     height: 100vh;
     background-image: url('../resources/images/contact.jpg');
     background-size: cover;
+}
+
+
+.contact-form{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid #333c4e;
+    background: white;
+    margin: 0vw auto;
+    margin-top: -25vh;
+    margin-bottom: -25.2vh;
+    position: relative;
 }
 
 .footer{
@@ -503,13 +515,16 @@
 
 .footer-container{
     width: 50vw;
-    margin:0px auto;
-    height: 56vh;
+    margin: 0px auto;
+    padding-top: 27vh;
+    height: 33vh;
+    position: relative;
 }
 
 .footer-container ul{
     display: inline-block;
     list-style: none;
+    padding: 0px;
     margin:0px;
     color: white;
     font-size: 1.2em;

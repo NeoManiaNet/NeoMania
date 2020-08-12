@@ -20,7 +20,7 @@
     color: white;
     font-family: varela-round;
     transition: text-shadow 0.4s ease-out;
-    text-shadow: 0.13vw 0vw 0.2vw white;
+    text-shadow: 0.1vw 0vw 0.2vw white;
   }
 
 .neon-white:hover{

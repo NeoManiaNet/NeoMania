@@ -30,6 +30,9 @@ var app = {
 			this.slideInterval = setInterval(function(){
 				app.slide(true, false);
 			},7000);
+	},
+	scrollToBottom: function(){
+		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 	}
 };
 
