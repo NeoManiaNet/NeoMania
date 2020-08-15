@@ -7,7 +7,7 @@
         Neo Mania
     </title>
 
-    <link rel="stylesheet" href="styles/icons.min.css" />
+    <script src="https://use.fontawesome.com/173cc9b992.js"></script>
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -43,7 +43,7 @@
         <div class="solutions-content">
             <div class="header neon-white">What We Do</div>
             <div class="solutions-white-layer">
-                <div class="solution-item">
+                <div id="web" class="solution-item">
                     <div class="solutions-image"></div>
 
                     <div class="solution-item-content">
@@ -54,7 +54,7 @@
                         <div class="btn btn-align-right" onclick="app.scrollToBottom()">Apply Now!</div>
                     </div>
                 </div>
-                <div class="solution-item">
+                <div id="windows" class="solution-item">
                     <div class="solution-item-content">
                         <h3>Desktop Application Development</h3>
                         
@@ -65,7 +65,7 @@
 
                     <div class="solutions-image" style="margin: 0vw 0vw 0vw 4vw;"></div>
                 </div>
-                <div class="solution-item" style="padding-top: 8vw;">
+                <div id="consulting" class="solution-item" style="padding-top: 8vw;">
                     <div class="solutions-image"></div>
 
                     <div class="solution-item-content">
@@ -102,7 +102,32 @@
     </div>
 
     <div class="contact-form">
-        
+        <div class="form-container">
+            <h3>Let's talk</h3>
+            <form>
+                <div class="field">
+                    <input type="text" id="name" name="name" placeholder=".">
+                    <label for="name">Name*</label>
+                </div>
+                    
+                <div class="field">
+                    <input type="text" id="email" name="email" placeholder=".">
+                    <label for="email">E-mail address*</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" id="phone" name="phone" placeholder=".">
+                    <label for="phone">Phone number*</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" id="msg" name="msg" placeholder=".">
+                    <label for="msg">Additional message</label>
+                </div>
+                
+                <div class="btn submit">Submit</div>
+            </form>
+        </div>
     </div>
 
     <div class="footer">
@@ -111,7 +136,13 @@
                 <li style="font-weight: bold">Solutions</li>
                 <li>Enterprise Web Development</li>
                 <li>Windows Development</li>
+                <li>IT Consulting</li>
             </ul>
+
+            <!-- <div class="footer-social">
+                <a><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a></a><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div> -->
         </div>
 
         <div class="footer-bottom">

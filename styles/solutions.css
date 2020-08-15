@@ -105,3 +105,79 @@
     font-size: 1.3em;
     font-family: varela-round;
 }
+
+.form-container{
+    width: 60%;
+    margin: 5vh auto;
+}
+
+.form-container h3{
+    text-align: center;
+    font-size: 2.2em;
+    font-family: varela-round;
+    margin-bottom: 1vh;
+}
+
+.field {
+    margin:1vh 0vw;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+.form-container label{
+    font-size: 1.2em;
+    font-family: varela-round;
+}
+
+.form-container input{
+    width: 100%;
+    font-size: 1.2em;
+    font-family: varela-round;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-container label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+
+.form-container input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+  }
+
+  input:placeholder-shown + label {
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: text;
+    transform-origin: left bottom; 
+    transform: translate(0, 2rem) scale(1.4);
+    margin-bottom: 0.7vh;
+  }
+
+  ::-webkit-input-placeholder {
+    transition: inherit;
+    opacity: 0;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  input:not(:placeholder-shown) + label,
+   input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+  margin-bottom: 0.7vh;
+}
+
+.submit{
+    text-align: center;
+    font-size: 1.6em;
+    width: 80px;
+    margin: 1vh auto;
+    margin-top: 5.2vh;
+}

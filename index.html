@@ -7,7 +7,7 @@
         Neo Mania
     </title>
 
-    <link rel="stylesheet" href="styles/icons.min.css" />
+    <link rel="stylesheet" href="styles/all.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -30,7 +30,7 @@
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="javascript:app.scrollToBottom()">Contact</a>
                 </li>
             </ul>
         </div>
@@ -40,11 +40,11 @@
         <!-- Slide buttons-->
         <div class="buttons-container">
             <div id="left-button">
-                <div onclick="app.slide(false,true)">&#10094;</div>
+                <div onclick="page.slide(false,true)">&#10094;</div>
             </div>
 
             <div id="right-button">
-                <div onclick="app.slide(true,true)">&#10095;</div>
+                <div onclick="page.slide(true,true)">&#10095;</div>
             </div>
         </div>
 
@@ -132,6 +132,7 @@
                 <li style="font-weight: bold">Solutions</li>
                 <li>Enterprise Web Development</li>
                 <li>Windows Development</li>
+                <li>IT Consulting</li>
             </ul>
         </div>
 
@@ -141,5 +142,6 @@
     </div>
 
     <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/index.script.js"></script>
 </body>
 </html>

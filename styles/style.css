@@ -505,12 +505,16 @@
     margin-top: -25vh;
     margin-bottom: -25.2vh;
     position: relative;
+    z-index: 2;
 }
 
 .footer{
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 60vh;
     background-color: #333c4e;
+    font-family: vazgen;
 }
 
 .footer-container{
@@ -519,6 +523,7 @@
     padding-top: 27vh;
     height: 33vh;
     position: relative;
+    display: flex;
 }
 
 .footer-container ul{
@@ -528,12 +533,11 @@
     margin:0px;
     color: white;
     font-size: 1.2em;
-    font-family: vazgen;
 }
 
 .footer-container ul li{
     transition: color 0.4s;
-    margin:1vh 1vw;
+    margin:1vh 1vw 1vh 0.5vw;
 }
 
 .footer-container ul li:hover{
