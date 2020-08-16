@@ -1,4 +1,6 @@
 var app = {
+	redirectAndScrollTo: function(url, elementName){
+		window.location.href = url + "#" + elementName;},
 	scrollTo: function(elementName){
 		var element = document.getElementById(elementName);
 		var screenPosition = element.getBoundingClientRect();
@@ -30,8 +32,6 @@ window.addEventListener("scroll", function()
 
 window.addEventListener("load", function() 
 {
-	console.log(document.documentElement.scrollTop);
-
 	var scrollTop = document.documentElement.scrollTop;
 
 	if (scrollTop> 50) {
@@ -40,5 +40,12 @@ window.addEventListener("load", function()
 	} else {
 	    document.getElementById("navbar-container").className = "navbar-container-dark";
 	    document.getElementById("navbar").className = "navbar-dark";
+	}
+
+	if(window.location.href.includes("#"))
+	{
+		var parts = window.location.href.split("#");
+
+		app.scrollTo(parts[1]);
 	}
 });
