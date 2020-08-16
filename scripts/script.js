@@ -1,4 +1,10 @@
 var app = {
+	scrollTo: function(top){
+		window.scrollTo({ top: top, behavior: 'smooth' });
+	},
+	scrollToTop: function(){
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	},
 	scrollToBottom: function(){
 		window.scrollTo({ top: document.body.scrollHeight - 1000, behavior: 'smooth' });
 	}

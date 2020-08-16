@@ -7,7 +7,7 @@
         Neo Mania
     </title>
 
-    <script src="https://use.fontawesome.com/173cc9b992.js"></script>
+    <script src="https://kit.fontawesome.com/0980293d0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -31,7 +31,7 @@
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="javascript:app.scrollToBottom()">Contact</a>
                 </li>
             </ul>
         </div>
@@ -133,16 +133,26 @@
     <div class="footer">
         <div class="footer-container">
             <ul>
-                <li style="font-weight: bold">Solutions</li>
-                <li>Enterprise Web Development</li>
-                <li>Windows Development</li>
-                <li>IT Consulting</li>
+                <li style="font-weight: bold"><a href="javascript:app.scrollToTop()">Solutions</a></li>
+                <li><a href="javascript:app.scrollTo(350)">Enterprise Web Development</a></li>
+                <li><a href="javascript:app.scrollTo(900)">Windows Development</a></li>
+                <li><a href="javascript:app.scrollTo(1350)">IT Consulting</a></li>
             </ul>
 
-            <!-- <div class="footer-social">
-                <a><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a></a><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            </div> -->
+            <ul>
+                <li style="font-weight: bold">Contact info</li>
+                <li><a target="_blank" href="https://www.google.com/maps/place/Yerevan,+Armenia/@40.1535005,44.4185274,12z/data=!3m1!4b1!4m5!3m4!1s0x406aa2dab8fc8b5b:0x3d1479ae87da526a!8m2!3d40.1872023!4d44.515209?hl=en"><i class="fas fa-map-marker-alt fa-sm" style="margin-left: 0.15vw"></i> Yerevan, Armenia</a></li>
+                <li><i class="fas fa-phone fa-sm"></i> +374 XX XXX XXX</li>
+                <li><a href="mailto:info@neomania.net"><i class="fas fa-envelope fa-sm" aria-hidden="true"></i> info@neomania.net</a></li>
+            </ul>
+
+            <ul>
+                <li style="font-weight: bold; margin-top: 1vh;">Social</li>
+                <li class="social-container">
+                    <div><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></div>
+                    <div><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></div>
+                </li>
+            </ul>
         </div>
 
         <div class="footer-bottom">

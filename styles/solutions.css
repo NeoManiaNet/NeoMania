@@ -127,6 +127,7 @@
 .form-container label{
     font-size: 1.2em;
     font-family: varela-round;
+    color: gray;
 }
 
 .form-container input{
