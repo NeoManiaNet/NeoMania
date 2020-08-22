@@ -27,3 +27,7 @@
     text-shadow: 0vw    0vw 1.5vw white;
     cursor: default;
 }
+
+p{
+    text-align: justify;
+}

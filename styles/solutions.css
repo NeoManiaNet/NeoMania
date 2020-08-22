@@ -1,54 +1,118 @@
+.navbar-container-light{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .first-main-container{
-    height: 260vh;
+    height: 330vh;
 }
 
 h3{
     font-size: 2.85vh;
 }
 
+.idea-bg {
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 103vh;
+    background-image: url(../resources/images/solutions/lets-build-it.jpg);
+    background-size: cover;
+}
+
 .solutions-bg {
     position: relative;
     z-index: -1;
     width: 100vw;
-    height: 261.4vh;
+    height: 281.4vh;
     margin-left: -1.0vh;
     margin-top: -0.3vw;
-    background-image: url(../resources/images/dark.jpg);
+    background-image: url(../resources/images/solutions/dark.jpg);
     background-size: cover;
     filter: blur(5px);
 }
 
 .header{
-    font-size: 5vh;
+    position: absolute;
+    font-size: 8vh;
     color: white;
     font-family: varela-round;
     margin-bottom: 2vh;
     text-align: center;
+    text-transform: uppercase;
+    top: 50vh;
+    left: 65vw;
 }
 
 .solutions-content{
+    background: rgba(255,255,255, 1);
     position: relative;
     z-index: 1;
-    top: -261.4vh;
-    width: 80vw;
-    height: 260vh;
-    margin: 0vh auto; 
-    margin-top: 25vh;
+    top: -361.7vh;
+    width: 100vw;
+    height: 333vh;
+    margin: 0vh auto;
+    margin-top: 78vh;
 }
 
 .solutions-white-layer{
-    background: rgba(255,255,255, 0.7);
     width: 80vw;
-    height: 260vh;
+    height: 333vh;
     margin: 0vh auto; 
 }
 
 .solutions-image{
     display: inline-block;
     width: 30%;
-    height: 15vw;
-    background: green;
+    background-size: cover;
     margin-right: 4vw;
+}
+
+#web-image{
+    background-image: url(../resources/images/solutions/web-application-development.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#desktop-image{
+    background-image: url(../resources/images/solutions/desktop-application-development.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#consulting-image{
+    background-image: url(../resources/images/solutions/it-consulting.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#support-image{
+    display: inherit;
+    width: 60%;
+    height: 100%;
+    margin:0px auto;
+    background-image: url(../resources/images/solutions/support.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#qa-image{
+    display: inherit;
+    width: 60%;
+    height: 100%;
+    margin:0px auto;
+    background-image: url(../resources/images/solutions/quality-assurance.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#ux-image{
+    display: inherit;
+    width: 60%;
+    height: 100%;
+    margin:0px auto;
+    background-image: url(../resources/images/solutions/ux-design.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .solution-item{
@@ -91,6 +155,8 @@ h3{
     font-size: 3.7vh;
     font-weight: bold;
     margin: 1vh;
+    margin-bottom: 12vh;
+    text-align: center;
 }
 
 .flex-container{
@@ -107,11 +173,13 @@ h3{
     margin: 2vh;
     font-size: 2.9vh;
     font-family: varela-round;
+    text-align: center;
 }
 
 .flex-container div p{
     font-size: 2.5vh;
     font-family: varela-round;
+    padding: 0px 1vw;
 }
 
 .form-container{
