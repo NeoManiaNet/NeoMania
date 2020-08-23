@@ -176,6 +176,7 @@
     font-size: 1.7em;
     font-family: varela-round;
     margin-top: 2vh;
+    width:37vw;
 }
 
 .what-we-do{
@@ -188,12 +189,14 @@
     transition-timing-function: ease-out;
     position: absolute;
     display: inline-block;
+
 }
 
 .what-we-do h3{
     font-size: 3rem;
     font-family: varela-round;
     margin-bottom: 0vh;
+    left: 37vw;
 }
 
 .what-we-do p{
