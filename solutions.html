@@ -13,159 +13,171 @@
     <link rel="stylesheet" href="styles/solutions.css" />
 </head>
 <body>
-    <div id="navbar-container" class="navbar-container-dark">
-        <div id="navbar" class="navbar-dark">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="resources/images/logo.png">
-                    <div>NeoMania</div>
-                </a>
-            </div>
-
-            <ul>
-                <li class="selected-item">
-                    <a href="solutions.html">Solutions</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="javascript:app.scrollTo('form')">Contact</a>
-                </li>
-            </ul>
+    <div id="loading" class="hide">
+        <div>
+            <div></div>
+            <p>We're getting things ready...</p>
         </div>
     </div>
+    <script>
+        loadingLoaded();
+    </script>
 
-    <div class="first-main-container">
-        <div class="idea-bg">
+    <div id="content" class="hide">
+        <div id="navbar-container" class="navbar-container-dark">
+            <div id="navbar" class="navbar-dark">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="resources/images/logo.png">
+                        <div>NeoMania</div>
+                    </a>
+                </div>
 
+                <ul>
+                    <li class="selected-item">
+                        <a href="solutions.html">Solutions</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="javascript:app.scrollTo('form')">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="header neon-white">Let's build it</div>
+        <div class="first-main-container">
+            <div class="idea-bg">
 
-        <div class="solutions-content">
-            <div class="solutions-white-layer">
-                <div id="web" class="solution-item" style="padding-top: 12vh">
-                    <div id="web-image" class="solutions-image">
-                    </div>
+            </div>
 
-                    <div class="solution-item-content">
-                        <h3>Web Application Development</h3>
+            <div class="header neon-white">Let's build it</div>
 
-                        <p>We build smart web applications from various types and forms: from small start-ups to tremendous enterprise systems. We empower our clients with web applications developed using Blazor, Asp.Net Core, EF Core. What you can truly expect from us is the individual approach to your project achieved by the detailed analysis of its nature. We also utilize the latest UX trends. We provide frond-end, back-end, database and server-scale designed to fit your custom workflow. Get started!</p>
-
-                        <div class="btn btn-align-right" onclick="app.scrollToBottom()">Apply Now!</div>
-                    </div>
-                </div>
-                <div id="windows" class="solution-item">
-                    <div class="solution-item-content">
-                        <h3>Desktop Application Development</h3>
-                        
-                        <p>We offer distinctive cross-platform desktop application development services to turn your software ideas into a solid and compatible market reality. We follow the latest trends in software engineering and often times set our own trends to leave the users with the ultimate experience while outdoing our clients’ expectations. Get started!</p>
-
-                        <div class="btn btn-align-right" onclick="app.scrollToBottom()">Apply Now!</div>
-                    </div>
-
-                    <div id="desktop-image" class="solutions-image" style="margin: 0vw 0vw 0vw 4vw;"></div>
-                </div>
-                <div id="consulting" class="solution-item" style="padding-top: 8vw;">
-                    <div id="consulting-image" class="solutions-image"></div>
-
-                    <div class="solution-item-content">
-                        <h3>IT consulting</h3>
-                        
-                        <p>As a software development company, we believe it is our duty to offer free technology consulting to anyone who is interested. What we provide product-based development strategy, solution architecture and reasonable pricing.</p>
-                    </div>
-                </div>
-                <div class="benefits-container">
-                    <h2>How you will benefit</h2>
-
-                    <div class="flex-container">
-                        <div>
-                            <div id="support-image" class="solutions-image"></div>
-
-                            <h4>Support</h4>
-
-                            <p>We thoroughly support your product till the day it gets released.</p>
+            <div class="solutions-content">
+                <div class="solutions-white-layer">
+                    <div id="web" class="solution-item" style="padding-top: 12vh">
+                        <div id="web-image" class="solutions-image">
                         </div>
 
-                        <div>
-                            <div id="qa-image" class="solutions-image"></div>
+                        <div class="solution-item-content">
+                            <h3>Web Application Development</h3>
 
-                            <h4>QA / Testing</h4>
+                            <p>We build smart web applications from various types and forms: from small start-ups to tremendous enterprise systems. We empower our clients with web applications developed using Blazor, Asp.Net Core, EF Core. What you can truly expect from us is the individual approach to your project achieved by the detailed analysis of its nature. We also utilize the latest UX trends. We provide frond-end, back-end, database and server-scale designed to fit your custom workflow. Get started!</p>
 
-                            <p>We deliver free of charge QA service to any product we build.</p>
+                            <div class="btn btn-align-right" onclick="app.scrollToBottom()">Apply Now!</div>
+                        </div>
+                    </div>
+                    <div id="windows" class="solution-item">
+                        <div class="solution-item-content">
+                            <h3>Desktop Application Development</h3>
+                            
+                            <p>We offer distinctive cross-platform desktop application development services to turn your software ideas into a solid and compatible market reality. We follow the latest trends in software engineering and often times set our own trends to leave the users with the ultimate experience while outdoing our clients’ expectations. Get started!</p>
+
+                            <div class="btn btn-align-right" onclick="app.scrollToBottom()">Apply Now!</div>
                         </div>
 
-                        <div>
-                            <div id="ux-image" class="solutions-image"></div>
+                        <div id="desktop-image" class="solutions-image" style="margin: 0vw 0vw 0vw 4vw;"></div>
+                    </div>
+                    <div id="consulting" class="solution-item" style="padding-top: 8vw;">
+                        <div id="consulting-image" class="solutions-image"></div>
 
-                            <h4>UX</h4>
+                        <div class="solution-item-content">
+                            <h3>IT consulting</h3>
+                            
+                            <p>As a software development company, we believe it is our duty to offer free technology consulting to anyone who is interested. What we provide product-based development strategy, solution architecture and reasonable pricing.</p>
+                        </div>
+                    </div>
+                    <div class="benefits-container">
+                        <h2>How you will benefit</h2>
 
-                            <p>NeoMania covers all UX stages. We can build digital products with scratches or reestablish existing solutions.  </p>
+                        <div class="flex-container">
+                            <div>
+                                <div id="support-image" class="solutions-image"></div>
+
+                                <h4>Support</h4>
+
+                                <p>We thoroughly support your product till the day it gets released.</p>
+                            </div>
+
+                            <div>
+                                <div id="qa-image" class="solutions-image"></div>
+
+                                <h4>QA / Testing</h4>
+
+                                <p>We deliver free of charge QA service to any product we build.</p>
+                            </div>
+
+                            <div>
+                                <div id="ux-image" class="solutions-image"></div>
+
+                                <h4>UX</h4>
+
+                                <p>NeoMania covers all UX stages. We can build digital products with scratches or reestablish existing solutions.  </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="form" class="contact-form">
-        <div class="form-container">
-            <h3>Let's talk</h3>
-            <form>
-                <div class="field">
-                    <input type="text" id="name" name="name" placeholder=".">
-                    <label for="name">Name*</label>
-                </div>
+        <div id="form" class="contact-form">
+            <div class="form-container">
+                <h3>Let's talk</h3>
+                <form>
+                    <div class="field">
+                        <input type="text" id="name" name="name" placeholder=".">
+                        <label for="name">Name*</label>
+                    </div>
+                        
+                    <div class="field">
+                        <input type="text" id="email" name="email" placeholder=".">
+                        <label for="email">E-mail address*</label>
+                    </div>
+
+                    <div class="field">
+                        <input type="text" id="phone" name="phone" placeholder=".">
+                        <label for="phone">Phone number*</label>
+                    </div>
+
+                    <div class="field">
+                        <input type="text" id="msg" name="msg" placeholder=".">
+                        <label for="msg">Additional message</label>
+                    </div>
                     
-                <div class="field">
-                    <input type="text" id="email" name="email" placeholder=".">
-                    <label for="email">E-mail address*</label>
-                </div>
-
-                <div class="field">
-                    <input type="text" id="phone" name="phone" placeholder=".">
-                    <label for="phone">Phone number*</label>
-                </div>
-
-                <div class="field">
-                    <input type="text" id="msg" name="msg" placeholder=".">
-                    <label for="msg">Additional message</label>
-                </div>
-                
-                <div class="btn submit">Submit</div>
-            </form>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer-container">
-            <ul>
-                <li style="font-weight: bold"><a href="javascript:app.scrollToTop()">Solutions</a></li>
-                <li><a href="#web">Enterprise Web Development</a></li>
-                <li><a href="#windows">Windows Development</a></li>
-                <li><a href="#consulting">IT Consulting</a></li>
-            </ul>
-
-            <ul>
-                <li style="font-weight: bold">Contact info</li>
-                <li><a target="_blank" href="https://www.google.com/maps/place/Yerevan,+Armenia/@40.1535005,44.4185274,12z/data=!3m1!4b1!4m5!3m4!1s0x406aa2dab8fc8b5b:0x3d1479ae87da526a!8m2!3d40.1872023!4d44.515209?hl=en"><i class="fas fa-map-marker-alt fa-sm" style="margin-left: 0.15vw"></i> Yerevan, Armenia</a></li>
-                <li><i class="fas fa-phone fa-sm"></i> +374 XX XXX XXX</li>
-                <li><a href="mailto:info@neomania.net"><i class="fas fa-envelope fa-sm" aria-hidden="true"></i> info@neomania.net</a></li>
-            </ul>
-
-            <ul>
-                <li style="font-weight: bold; margin-top: 1vh;">Social</li>
-                <li class="social-container">
-                    <div><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></div>
-                    <div><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></div>
-                </li>
-            </ul>
+                    <div class="btn submit">Submit</div>
+                </form>
+            </div>
         </div>
 
-        <div class="footer-bottom">
-            <div class="footer-bottom-container">© NeoMania LLC / <a href="#">Privacy Policy</a></div>
+        <div class="footer">
+            <div class="footer-container">
+                <ul>
+                    <li style="font-weight: bold"><a href="javascript:app.scrollToTop()">Solutions</a></li>
+                    <li><a href="#web">Enterprise Web Development</a></li>
+                    <li><a href="#windows">Windows Development</a></li>
+                    <li><a href="#consulting">IT Consulting</a></li>
+                </ul>
+
+                <ul>
+                    <li style="font-weight: bold">Contact info</li>
+                    <li><a target="_blank" href="https://www.google.com/maps/place/Yerevan,+Armenia/@40.1535005,44.4185274,12z/data=!3m1!4b1!4m5!3m4!1s0x406aa2dab8fc8b5b:0x3d1479ae87da526a!8m2!3d40.1872023!4d44.515209?hl=en"><i class="fas fa-map-marker-alt fa-sm" style="margin-left: 0.15vw"></i> Yerevan, Armenia</a></li>
+                    <li><i class="fas fa-phone fa-sm"></i> +374 XX XXX XXX</li>
+                    <li><a href="mailto:info@neomania.net"><i class="fas fa-envelope fa-sm" aria-hidden="true"></i> info@neomania.net</a></li>
+                </ul>
+
+                <ul>
+                    <li style="font-weight: bold; margin-top: 1vh;">Social</li>
+                    <li class="social-container">
+                        <div><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></div>
+                        <div><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-container">© NeoMania LLC / <a href="#">Privacy Policy</a></div>
+            </div>
         </div>
     </div>
 
