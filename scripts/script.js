@@ -32,20 +32,22 @@ window.addEventListener("scroll", function()
 
 window.addEventListener("load", function() 
 {
-	var scrollTop = document.documentElement.scrollTop;
+	setTimeout(function(){
+		var scrollTop = document.documentElement.scrollTop;
 
-	if (scrollTop> 50) {
-    	document.getElementById("navbar-container").className = "navbar-container-light";
-    	document.getElementById("navbar").className = "navbar-light";
-	} else {
-	    document.getElementById("navbar-container").className = "navbar-container-dark";
-	    document.getElementById("navbar").className = "navbar-dark";
-	}
-
-	if(window.location.href.includes("#"))
-	{
-		var parts = window.location.href.split("#");
-
-		app.scrollTo(parts[1]);
-	}
+		if (scrollTop> 50) {
+			document.getElementById("navbar-container").className = "navbar-container-light";
+			document.getElementById("navbar").className = "navbar-light";
+		} else {
+			document.getElementById("navbar-container").className = "navbar-container-dark";
+			document.getElementById("navbar").className = "navbar-dark";
+		}
+	
+		if(window.location.href.includes("#"))
+		{
+			var parts = window.location.href.split("#");
+	
+			app.scrollTo(parts[1]);
+		}
+	},300);
 });
