@@ -49,5 +49,5 @@ window.addEventListener("load", function()
 	
 			app.scrollTo(parts[1]);
 		}
-	},500);
+	},300);
 });
