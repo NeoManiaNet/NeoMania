@@ -18,5 +18,5 @@ window.addEventListener("load",function(){
             content.style.animationName = "animate-show";
 
             content.className = "show";
-        },500);
+        },300);
 });
