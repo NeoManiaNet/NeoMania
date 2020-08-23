@@ -1,4 +1,73 @@
-﻿.btn:after {
+﻿html {
+    scroll-behavior: smooth;
+  }
+  
+body
+{
+    margin:0px;
+    overflow-x: hidden;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+}
+
+#content{
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+}
+
+@keyframes animate-show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#loading{
+    animation-name: animate-show;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../resources/images/loading.jpg);
+    background-size: cover
+}
+
+#loading > div {
+    height: 40vh;
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+#loading > div > div{
+    margin-top: -1vh;
+    height: 33vh;
+    margin: 0 auto;
+    background-image: url(../resources/images/loading.gif);
+    background-size: cover
+}
+
+#loading > div > p{
+    font-size: 2vh;
+    font-family: varela-round;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+.btn:after {
     transition: width 0.5s ease-out;
     content: "";
     display: block;
@@ -26,4 +95,275 @@
 .neon-white:hover{
     text-shadow: 0vw    0vw 1.5vw white;
     cursor: default;
+}
+
+/* Navbar dark */
+
+.navbar-container-dark{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 12vh;
+    z-index: 5;
+}
+
+.logo{
+    transition: 0.4s ease-out;
+    transition-property: margin-top;
+    display: inline-block;
+    font-size: 2.35em;
+    font-family: varela-round;
+    margin-top: 3vh;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo a{
+    text-decoration: none;
+    color:white;
+}
+
+.logo a img{
+    height: 9vh;
+    transition: 0.4s ease-out;
+    transition-property: height;
+}
+
+.logo div{
+    display: block;
+    margin-top: -7.7vh;
+    margin-left: 100px;
+}
+
+.navbar-dark{
+    display: block;
+    width: 90%;
+    height: 12vh;
+    margin: 0px auto;
+    color: white;
+}
+
+.navbar-dark ul{
+    transition: margin-top 0.4s ease-out;
+    display:  block;
+    float: right;
+    left: 0px;
+    margin-top: 6.7vh;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.navbar-dark ul li{
+    display: inline-block;
+    margin: 0 1vw;
+    font-size: 1.5em;
+    font-family: varela-round;
+    color: white;
+}
+
+.navbar-dark ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-dark ul li a:after {
+    transition: width 0.5s ease-out;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0px;
+    padding-top: 5px;
+    border-bottom: 2px solid white;
+}
+
+.navbar-dark ul li a:hover {
+    cursor: pointer;
+}
+
+.navbar-dark ul li a:hover::after {
+    width: 100%;
+}
+
+/* Navbar */
+
+.navbar-container-light{
+    transition: 0.4s ease-out;
+    transition-property: height, background-color;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    z-index: 5;
+    top: 0px;
+    width: 100%;
+    height: 8vh;
+}
+
+.navbar-light .logo{
+    margin-top: 0.5vh;
+    font-size: 2em;
+}
+
+.navbar-light .logo img{
+    height: 7vh;
+}
+
+.navbar-light .logo a div{
+    display: block;
+    margin-top: -6.2vh;
+    margin-left: 80px;
+    color: black;
+}
+
+.navbar-light{
+    display: block;
+    width: 90%;
+    height:8vh;
+    margin: 0px auto;
+    color: black;
+    backdrop-filter: blur(4px);
+}
+
+.navbar-light ul{
+    transition: margin-top 0.4s ease-out;
+    display: block;
+    float: right;
+    left: 0px;
+    margin-top: 2.7vh;
+    list-style-type: none;
+}
+
+.selected-item a:after{
+    width: 100% !important;
+}
+
+.navbar-light ul li{
+    display: inline-block;
+    margin: 0 1vw;
+    font-size: 1.5em;
+    font-family: varela-round;
+}
+
+.navbar-light ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-light ul li a:after {
+    transition: width 0.5s ease-out;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0px;
+    padding-top: 3px;
+    border-bottom: 2px solid;
+    color: black;
+}
+
+.navbar-light ul li a:hover {
+    cursor: pointer;
+}
+
+.navbar-light ul li a:hover::after {
+    width: 100%;
+}
+
+/* Navbar*/
+
+.contact-form{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid #333c4e;
+    background: white;
+    margin: 0vw auto;
+    margin-top: -25vh;
+    margin-bottom: -25.2vh;
+    position: relative;
+    z-index: 2;
+}
+
+.footer{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 60vh;
+    background-color: #333c4e;
+    font-family: vazgen;
+}
+
+.footer-container{
+    width: 50vw;
+    margin: 0px auto;
+    padding-top: 27vh;
+    height: 33vh;
+    position: relative;
+    display: flex;
+}
+
+.footer-container ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    margin:0 2vw;
+    color: white;
+    font-size: 2vh;
+}
+
+.footer-container ul li{
+    transition: color 0.4s;
+    color: white;
+    margin:1vh 1vw 1vh 0.5vw;
+}
+
+.footer-container ul li:hover{
+    color: #b5b5b5;
+    cursor: pointer;
+}
+
+.footer-container ul li a{
+    transition: color 0.4s;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container ul li a:hover{
+    color: #b5b5b5;
+    cursor: pointer;
+}
+
+.footer-container i{
+    margin:0 0.4vw 0 0;
+}
+
+.social-container{
+    display: flex;
+}
+
+.social-container i{
+    margin: 0 0.7vw 0 0;
+}
+
+.footer-bottom{
+    height: 4vh;
+    vertical-align: middle;
+    background-color: gray;
+}
+
+.footer-bottom-container{
+    display: block;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    color: white;
+    font-weight: lighter;
+}
+
+.footer-bottom-container a{
+    transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+
+.footer-bottom-container a:hover{
+    color: #b5b5b5;
 }
