@@ -1,0 +1,66 @@
+.first-main-container{
+    height: 150vh;
+}
+
+h3{
+    font-size: 2.85vh;
+}
+
+.about-bg {
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 70vh;
+    margin-left: -1.0vh;
+    margin-top: -0.3vw;
+    background-image: url(../resources/images/c095c302-3fbc-4ea0-833b-35088f7cb4aa.jpg);
+    background-size: cover;
+    /*filter: blur(2px);*/
+}
+
+.about-content{
+    position: relative;
+    z-index: -1;
+    top: -70vh;
+    width: 50vw;
+    height: 260vh;
+    margin: 0vh auto; 
+    margin-top: 25vh;
+}
+
+.about-item{
+    display: flex;
+    padding: 10vw 8vw 0vw 8vw;
+}
+
+.about-item-content{
+    width: 70%;
+}
+.header{
+    font-size: 5vh;
+    color: white;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+
+}
+
+.about-item-content h3{
+    margin: 0px;
+    font-family: varela-round;
+}
+
+.about-item-content p{
+    font-size: 2.5vh;
+    font-family: varela-round;
+}
+.about-text{
+    opacity: 0;
+    margin-top: 17vh;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    position: absolute;
+    width:74vw;
+    display: inline-block;
+}
