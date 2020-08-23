@@ -1,5 +1,17 @@
 .navbar-container-light{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-light .logo a div{
+    color: white;
+}
+
+.navbar-light ul li a{
+    color: white;
+}
+
+.navbar-light ul li a:after {
+    color: white;
 }
 
 .first-main-container{

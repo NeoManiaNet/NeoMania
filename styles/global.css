@@ -33,8 +33,8 @@ body
 #loading{
     animation-name: animate-show;
     animation-timing-function: ease-in-out;
-    animation-duration: 0.5s;
-    transition: opacity 0.5s ease-in-out;
+    animation-duration: 0.3s;
+    transition: opacity 0.3s ease-in-out;
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -106,7 +106,6 @@ p{
     height: 12vh;
     z-index: 5;
 }
-
 
 .logo{
     transition: 0.4s ease-out;
@@ -211,9 +210,9 @@ p{
 
 .navbar-light .logo a div{
     display: block;
-    color: black;
     margin-top: -6.2vh;
     margin-left: 80px;
+    color: black;
 }
 
 .navbar-light{
@@ -222,6 +221,7 @@ p{
     height:8vh;
     margin: 0px auto;
     color: black;
+    backdrop-filter: blur(4px);
 }
 
 .navbar-light ul{
@@ -242,7 +242,6 @@ p{
     margin: 0 1vw;
     font-size: 1.5em;
     font-family: varela-round;
-    color: black;
 }
 
 .navbar-light ul li a{
@@ -257,7 +256,8 @@ p{
     margin: 0 auto;
     width: 0px;
     padding-top: 3px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid;
+    color: black;
 }
 
 .navbar-light ul li a:hover {
