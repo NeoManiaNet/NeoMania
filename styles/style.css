@@ -181,7 +181,7 @@
 
 .what-we-do{
     opacity: 0;
-    width: 74vw;
+    width: 37vw;
     margin-top: 51vh;
     transition-delay: 0.7s;
     transition-property: opacity, margin-top;
@@ -189,14 +189,15 @@
     transition-timing-function: ease-out;
     position: absolute;
     display: inline-block;
-
+    left: 50vw;
 }
 
 .what-we-do h3{
     font-size: 3rem;
     font-family: varela-round;
     margin-bottom: 0vh;
-    left: 37vw;
+    
+
 }
 
 .what-we-do p{
@@ -205,27 +206,17 @@
 }
 
 .what-we-do-first-part{
-    margin-top: 7vh;
+    margin-top: 0vh;
     opacity: 0;
     transition-delay: 0.7s;
     transition-property: opacity, margin-top;
     transition-duration: 0.7s;
     transition-timing-function: ease-out;
     left: 0vw;
-    width:37vw;
+    width:20vw;
 }
 
-.what-we-do-second-part{
-    margin-top: 7vh;
-    opacity: 0;
-    transition-delay: 1.4s;
-    transition-property: opacity, margin-top;
-    transition-duration: 0.7s;
-    transition-timing-function: ease-out;
-    position: absolute;
-    left: 37vw;
-    width:37vw;
-}
+
 
 .more-about-us{
     color: black;

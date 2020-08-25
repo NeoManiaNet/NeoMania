@@ -97,11 +97,13 @@ h3{
 
 .second-container-item{
 	position: relative;
-	width: 74vw;
-    height: 100vh;
+	width: 80vw;
+    height: 25vh;
+    padding-top: 2vh;
     margin: 0px auto;
+    box-shadow:0px 0px 15px #aaaaaa;
 }
-.second-container-item h3{
+.second-container-item p{
 	width: 74vw;
     height: 100vh;
     margin: 0px auto;
@@ -114,7 +116,15 @@ h3{
     font-family: varela-round;
     margin-bottom: 2vh;
     text-align: center;
-    display: flex;
+    
+}
+.third-header{
+    font-size: 5vh;
+    color: black;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+    
 }
 .second-container-content{
     font-size: 5vh;
