@@ -113,7 +113,7 @@ p{
     transition: 0.4s ease-out;
     transition-property: margin-top;
     display: inline-block;
-    font-size: 2.35em;
+    font-size: 3.5vh;
     font-family: varela-round;
     margin-top: 3vh;
 }
@@ -135,7 +135,7 @@ p{
 
 .logo div{
     display: block;
-    margin-top: -7.7vh;
+    margin-top: -7.27vh;
     margin-left: 100px;
 }
 
@@ -161,7 +161,7 @@ p{
 .navbar-dark ul li{
     display: inline-block;
     margin: 0 1vw;
-    font-size: 1.5em;
+    font-size: 2.5vh;
     font-family: varela-round;
     transition: all 0.4s ease-out;
     color: white;
@@ -207,7 +207,6 @@ p{
 
 .navbar-light .logo{
     margin-top: 0.5vh;
-    font-size: 2em;
 }
 
 .navbar-light .logo img{
@@ -216,7 +215,7 @@ p{
 
 .navbar-light .logo a div{
     display: block;
-    margin-top: -6.2vh;
+    margin-top: -6.6vh;
     margin-left: 80px;
     color: black;
 }
@@ -245,7 +244,7 @@ p{
 .navbar-light ul li{
     display: inline-block;
     margin: 0 1vw;
-    font-size: 1.5em;
+    font-size: 2.5vh;
     font-family: varela-round;
 }
 
@@ -294,7 +293,7 @@ p{
     text-align: center;
     font-family: varela-round;
     margin-bottom: 1vh;
-    margin-top: 0;
+    margin-top: 2vh;
     font-size: 2.85vh;
 }
 
@@ -433,6 +432,7 @@ p{
     padding-left: 2vw;
     color: white;
     font-weight: lighter;
+    font-size: 1.8vh;
 }
 
 .footer-bottom-container a{
@@ -445,3 +445,9 @@ p{
 .footer-bottom-container a:hover{
     color: #b5b5b5;
 }
+
+@media screen and (max-width: 800px) {
+    .footer-container{
+        width: 86vw;
+    }
+  }

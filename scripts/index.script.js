@@ -53,8 +53,5 @@ window.addEventListener("scroll", function()
 
 		document.getElementById("what-we-do-first-part").style.marginTop = "2vh";
 		document.getElementById("what-we-do-first-part").style.opacity = "1";
-
-		document.getElementById("what-we-do-second-part").style.marginTop = "2vh";
-		document.getElementById("what-we-do-second-part").style.opacity = "1";
 	}
 });
