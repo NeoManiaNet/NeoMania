@@ -102,6 +102,7 @@ h3{
     padding-top: 2vh;
     margin: 0px auto;
     box-shadow:0px 0px 15px #aaaaaa;
+    border-radius: 10px;
 }
 .second-container-item p{
 	width: 74vw;
@@ -136,7 +137,7 @@ h3{
 }
 .third-container {
     width: 100%;
-    height: 50vh;
+    height: 90vh;
     margin-top:  10vh;
     background-size: cover;
 }
@@ -167,12 +168,94 @@ h3{
   background: linear-gradient(45deg,#20BF55, #01BAEF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
 }
 
 .flex-container div p{
     font-size: 2.5vh;
     font-family: varela-round;
     padding: 0px 1vw;
+}
+
+.contact-form{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid #333c4e;
+    background: white;
+    margin: 0vw auto;
+    margin-top: -25vh;
+    margin-bottom: -25.2vh;
+    position: relative;
+    z-index: 2;
+}
+
+.form-container label{
+    font-size: 2.2vh;
+    font-family: varela-round;
+    color: gray;
+}
+
+.form-container input{
+    width: 100%;
+    font-size: 2.2vh;
+    font-family: varela-round;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-container label, input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+  }
+
+.form-container input:focus {
+    outline: 0;
+    border-bottom: 1px solid #666;
+  }
+
+  input:placeholder-shown + label {
+    max-width: 66.66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: text;
+    transform-origin: left bottom; 
+    transform: translate(0, 3.4vh) scale(1.25);
+    margin-bottom: 0.7vh;
+  }
+
+  ::-webkit-input-placeholder {
+    transition: inherit;
+    opacity: 0;
+  }
+
+  input:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  input:not(:placeholder-shown) + label,
+   input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+  margin-bottom: 0.7vh;
+}
+
+.submit{
+    text-align: center;
+    font-size: 3vh;
+    width: 80px;
+    margin: 1vh auto;
+    margin-top: 3.7vh;
+} 
+
+.footer-container{
+    margin-top: 13vh;
+}
+
+.footer{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 45vh;
+    background-color: #333c4e;
+    font-family: vazgen;
 }
