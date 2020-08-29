@@ -1,0 +1,178 @@
+.first-main-container{
+    height: 100vh;
+}
+
+h3{
+    font-size: 2.85vh;
+}
+
+
+.navbar-container-light{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar-light .logo a div{
+    color: white;
+}
+
+.navbar-light ul li a{
+    color: white;
+}
+
+.navbar-light ul li a:after {
+    color: white;
+}
+
+.about-bg {
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -1.0vh;
+    margin-top: -0.3vw;
+    background-image: url(../resources/images/c095c302-3fbc-4ea0-833b-35088f7cb4aa.jpg);
+    background-size: cover;
+    /*filter: blur(2px);*/
+}
+
+.aboutp-header{
+    position: relative;
+    z-index: -1;
+    top: -90vh;
+    width: 50vw;
+    height: 100vh;
+    margin: 0vh auto; 
+    margin-top: 25vh;
+}
+
+.about-item{
+    display: flex;
+    padding: 10vw 8vw 0vw 8vw;
+}
+
+.about-item-content{
+    width: 70%;
+}
+.header{
+    font-size: 5vh;
+    color: white;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+
+}
+
+.about-item-content h3{
+    margin: 0px;
+    font-family: varela-round;
+}
+
+.about-item-content p{
+    font-size: 2.5vh;
+    font-family: varela-round;
+}
+.about-text{
+    opacity: 0;
+    margin-top: 17vh;
+    transition-property: opacity, margin-top;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    position: absolute;
+    width:74vw;
+    display: inline-block;
+}
+.mission{
+	background-image: url(../resources/images/Hands.jpg);
+	height: 13vh;
+	width: 13vw;
+    background-size: cover;
+
+}
+.second-container {
+    width: 100%;
+    height: 30vh;
+    margin-top:  10vh;
+}
+
+
+.second-container-item{
+	position: relative;
+	width: 80vw;
+    height: 25vh;
+    padding-top: 2vh;
+    margin: 0px auto;
+    box-shadow:0px 0px 15px #aaaaaa;
+}
+.second-container-item p{
+	width: 74vw;
+    height: 100vh;
+    margin: 0px auto;
+    font-size: 2.5vh;
+    font-family: varela-round;
+}
+.second-header{
+    font-size: 5vh;
+    color: black;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+    
+}
+.third-header{
+    font-size: 5vh;
+    color: black;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+    
+}
+.second-container-content{
+    font-size: 5vh;
+    color: white;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+
+}
+.third-container {
+    width: 100%;
+    height: 50vh;
+    margin-top:  10vh;
+    background-size: cover;
+}
+.third-container-item{
+	position: relative;
+	width: 80vw;
+    height: 100vh;
+    margin: 0px auto;
+}
+.flex-container{
+    margin-top: 3vh;
+    display: flex;
+}
+
+.flex-container div{
+    width: 100%;
+    margin-right: 2vw;
+}
+
+.flex-container div h4{
+    margin: 5vh;
+    font-size: 4vh;
+    font-family: varela-round;
+    text-align: center;
+
+
+
+  background: linear-gradient(45deg,#20BF55, #01BAEF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+}
+
+.flex-container div p{
+    font-size: 2.5vh;
+    font-family: varela-round;
+    padding: 0px 1vw;
+}

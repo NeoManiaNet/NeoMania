@@ -48,7 +48,7 @@ window.addEventListener("scroll", function()
 		document.getElementById("who-we-are").style.marginTop = "10vh";
 		document.getElementById("who-we-are").style.opacity = "1";
 
-		document.getElementById("what-we-do").style.marginTop = "44vh";
+		document.getElementById("what-we-do").style.marginTop = "50vh";
 		document.getElementById("what-we-do").style.opacity = "1";
 
 		document.getElementById("what-we-do-first-part").style.marginTop = "2vh";

@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
   font-family: bavro-regular;
   src: url(../resources/fonts/Bavro-Regular.otf);
 }
@@ -13,6 +13,6 @@
   src: url(../resources/fonts/VarelaRound-Regular.ttf);
 }
 @font-face {
-  font-family: Vazgen;
+  font-family: vazgen;
   src: url(../resources/fonts/IBMPlexSans-Light.ttf);
 }
