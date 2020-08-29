@@ -16,15 +16,16 @@
 <body>
 
 <div id="loading" class="hide">
-        <div>
-            <div></div>
-            <p>We're getting things ready...</p>
-        </div>
+    <div>
+        <div></div>
+        <p>We're getting things ready...</p>
     </div>
+</div>
     <script>
         loadingLoaded();
     </script>
 
+<div id="content" class="hide">
 	 <div id="navbar-container" class="navbar-container-dark">
             <div id="navbar" class="navbar-dark">
                 <div class="logo">
@@ -46,7 +47,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+    </div>
 
     <div class="first-main-container">
 
@@ -57,7 +58,8 @@
     		
     	</div>
     </div>
- <div class="second-container">
+
+    <div class="second-container">
     	<div class="second-container-item">
     		<div class="second-header">
     			<div>Our Mission</div>
@@ -70,42 +72,87 @@
     	</div>
     </div>
  
- <div class="third-container">
- 	<div class = "third-container-item">
- 		<div class="third-header">Our Core Values</div>
+    <div class="third-container">
+        <div class = "third-container-item">
+            <div class="third-header">Our Core Values</div>
+            <div class="flex-container">
+                <div>
+                    <h4>Quality Driven</h4>
+                    <p>With our advanced technical proficiency and superior substructure, we make sure premium quality is delivered in a timely manner lined up with your expectations.</p>
+                </div>
 
+                <div>
+                    <h4>Innovation</h4>
+                    <p>The word NeoMania is mostly defined as an obsession with the new in a negative way. We are here to add our individual connotation to the phenomenon. With us, NeoMania is not a compulsive preoccupation but a free choice to keep up with the rapidly changing world and becoming a trendsetter yourself.</p>
+                </div>
+                <div>
+                    <h4>Commitment</h4>
+                    <p>We don’t build digital products just for the sake of building them. We construct the foundation in the most feasible way possible. Our goal is not creating a bare digital outcome but creating it perfectly. </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-                        <div class="flex-container">
-                            <div>
-                                <h4>Quality Driven</h4>
-
-                                <p>With our advanced technical proficiency and superior substructure, we make sure premium quality is delivered in a timely manner lined up with your expectations.</p>
-                            </div>
-
-                            <div>
-
-								<h4>Innovation</h4>
-
-                                <p>The word NeoMania is mostly defined as an obsession with the new in a negative way. We are here to add our individual connotation to the phenomenon. With us, NeoMania is not a compulsive preoccupation but a free choice to keep up with the rapidly changing world and becoming a trendsetter yourself.</p>
-
-                            </div>
-                            <div>
-                                 <h4>Commitment</h4>
-
-                                <p>We don’t build digital products just for the sake of building them. We construct the foundation in the most feasible way possible. Our goal is not creating a bare digital outcome but creating it perfectly. </p>
-                            </div>
-                        </div>
+    <div id="form" class="contact-form">
+        <div class="form-container">
+            <h3>Let's talk</h3>
+            <form>
+                <div class="field">
+                    <input type="text" id="name" name="name" placeholder=".">
+                    <label for="name">Name*</label>
+                </div>
                     
+                <div class="field">
+                    <input type="text" id="email" name="email" placeholder=".">
+                    <label for="email">E-mail address*</label>
+                </div>
 
+                <div class="field">
+                    <input type="text" id="phone" name="phone" placeholder=".">
+                    <label for="phone">Phone number*</label>
+                </div>
 
+                <div class="field">
+                    <input type="text" id="msg" name="msg" placeholder=".">
+                    <label for="msg">Additional message</label>
+                </div>
+                
+                <div class="btn submit">Submit</div>
+            </form>
+        </div>
+    </div>
 
+    <div class="footer">
+        <div class="footer-container">
+            <ul>
+                <li style="font-weight: bold"><a href="javascript:app.scrollToTop()">Solutions</a></li>
+                <li><a href="javascript:app.redirectAndScrollTo('solutions.html','web')">Enterprise Web Development</a></li>
+                <li><a href="javascript:app.redirectAndScrollTo('solutions.html','windows')">Desktop Application Development</a></li>
+                <li><a href="javascript:app.redirectAndScrollTo('solutions.html','consulting')">IT Consulting</a></li>
+            </ul>
 
- 	</div>
- </div>
+            <ul>
+                <li style="font-weight: bold">Contact info</li>
+                <li><a target="_blank" href="https://www.google.com/maps/place/Yerevan,+Armenia/@40.1535005,44.4185274,12z/data=!3m1!4b1!4m5!3m4!1s0x406aa2dab8fc8b5b:0x3d1479ae87da526a!8m2!3d40.1872023!4d44.515209?hl=en"><i class="fas fa-map-marker-alt fa-sm" style="margin-left: 0.15vw"></i> Yerevan, Armenia</a></li>
+                <li><i class="fas fa-phone fa-sm"></i> +374 XX XXX XXX</li>
+                <li><a href="mailto:info@neomania.net"><i class="fas fa-envelope fa-sm" aria-hidden="true"></i> info@neomania.net</a></li>
+            </ul>
 
+            <ul>
+                <li style="font-weight: bold; margin-top: 1vh;">Social</li>
+                <li class="social-container">
+                    <div><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></div>
+                    <div><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-<script type="text/javascript" src="scripts/script.js"></script>
-    <script type="text/javascript" src="scripts/index.script.js"></script>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">© NeoMania LLC / <a href="#">Privacy Policy</a></div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>
