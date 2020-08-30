@@ -124,10 +124,10 @@ h3{
     height: 10vh;
     padding-top: 4vh;
     font-size: 5vh;
-    color: black;
+    color: white;
     font-family: varela-round;
     text-align: center;
-    
+    box-shadow: 0px 0px 15px #aaaaaa;
 }
 
 .arrow-down {
