@@ -70,6 +70,7 @@ h3{
     font-size: 2.5vh;
     font-family: varela-round;
 }
+
 .about-text{
     opacity: 0;
     margin-top: 17vh;
@@ -80,6 +81,7 @@ h3{
     width:74vw;
     display: inline-block;
 }
+
 .mission{
 	background-image: url(../resources/images/Hands.jpg);
 	height: 13vh;
@@ -87,21 +89,38 @@ h3{
     background-size: cover;
 
 }
+
 .second-container {
     width: 100%;
     height: 30vh;
-    margin-top:  10vh;
+    margin-top: 10vh;
 }
 
+@keyframes shadow-annimation{
+    from{
+        box-shadow:none;
+    }
+    to{
+        box-shadow:0px 0px 15px #aaaaaa;
+    }
+}
 
 .second-container-item{
+    transition-property: opacity, top;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    top: 5vh;
+    opacity: 0;
 	position: relative;
 	width: 80vw;
     height: 25vh;
     padding-top: 2vh;
     margin: 0px auto;
-    box-shadow:0px 0px 15px #aaaaaa;
     border-radius: 10px;
+    animation-name: shadow-annimation;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 .second-container-item p{
 	width: 74vw;
@@ -118,6 +137,17 @@ h3{
     text-align: center;
     
 }
+
+#core-values{
+    position: relative;
+    transition-delay: 1s;
+    transition-property: opacity, top;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+    top: 5vh;
+    opacity: 0;
+}
+
 .third-header{
     background: linear-gradient(45deg,#20BF55, #01BAEF);
     border-radius: 10px;
@@ -127,7 +157,10 @@ h3{
     color: white;
     font-family: varela-round;
     text-align: center;
-    box-shadow: 0px 0px 15px #aaaaaa;
+    animation-name: shadow-annimation;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .arrow-down {
@@ -138,16 +171,6 @@ h3{
     border-right: 30px solid transparent;
     border-top: 30px solid #20BFA7;
   }
-
-  .arrow-down:first-child:before {
-    content:'';
-    position:absolute;
-    width:100%;
-    height:30px;
-    background:linear-gradient(to left, #c4268c, #9a0b72);
-    top:-30px;
-    left:0;
-}
 
 .second-container-content{
     font-size: 5vh;
@@ -175,8 +198,22 @@ h3{
 }
 
 .flex-container div{
+    transition-delay: 3s;
+    transition-property: opacity, margin-top;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
     width: 100%;
     margin-right: 2vw;
+    margin-top: 5vh;
+    opacity: 0;
+}
+
+#innovation{
+    transition-delay: 4s;
+}
+
+#commitment{
+    transition-delay: 5s;
 }
 
 .flex-container div h4{
@@ -184,12 +221,9 @@ h3{
     font-size: 4vh;
     font-family: varela-round;
     text-align: center;
-
-
-
-  background: linear-gradient(45deg,#20BF55, #01BAEF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg,#20BF55, #01BAEF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .flex-container div p{

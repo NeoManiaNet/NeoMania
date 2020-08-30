@@ -99,6 +99,18 @@ p{
     cursor: default;
 }
 
+.neon-black{
+    color: black;
+    font-family: varela-round;
+    transition: text-shadow 0.4s ease-out;
+    text-shadow: 0vw 0vw 0vw black;
+  }
+
+.neon-black:hover{
+    text-shadow: 0vw 0vw 1vw black;
+    cursor: default;
+}
+
 /* Navbar dark */
 
 .navbar-container-dark{
@@ -357,7 +369,7 @@ p{
 .submit{
     text-align: center;
     font-size: 3vh;
-    width: 80px;
+    width: 115px;
     margin: 1vh auto;
     margin-top: 3.7vh;
     font-family: varela-round;

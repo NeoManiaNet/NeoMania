@@ -234,21 +234,11 @@
     overflow: hidden;
 }
 
-.solutions-bg{
-    width: 101vw;
-    height: 101.4vh;
-    margin-left: -1vh;
-    margin-top: -0.3vw;
-    background-image: url(../resources/images/dark.jpg);
-    background-size: cover;
-    filter: blur(5px);
-    z-index: -1;
-}
-
 .solutions-content{
     width: 74vw;
     height: 100vh;
-    margin: -100vh auto;
+    margin: 0 auto;
+    color: black;
 }
 
 .solutions-header{
@@ -264,7 +254,7 @@
 
 .solutions-header:before,
 .solutions-header:after{
-    background-color: white;
+    background-color: black;
     content: "";
     display: inline-block;
     height: 1.5px;
@@ -286,16 +276,89 @@
 .solutions-content h2{
     margin-top: 5vh;
     position: relative;
-    color: white;
+    color: black;
     font-size: 4vh;
     font-family: varela-round;
 }
 
-.more{
+.how-we-do{
+    height: 65vh;
+    display: flex;
+}
+
+.how-we-do > div{
+    width: 50%;
+    padding-top: 5vh;
+}
+
+.how-we-do > div > h3{
+    font-size: 3vh;
     color: black;
+    position: relative;
+    font-family: vazgen;
+    text-align: center;
+    margin: 0;
+    margin-top: -5vh;
+}
+
+.web-logo-container{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-logo-container > div{
+    position: relative;
+    height: 10vh;
+    width: 12.3vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.windows-logo-container{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.windows-logo-container > div{
+    position: relative;
+    width: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#dot-net-core{
+    background-image: url(../resources/images/index/dot-net-core.png);
+}
+
+#ef-core{
+    background-image: url(../resources/images/index/ef-core.png);
+}
+
+#blazor{
+    background-image: url(../resources/images/index/blazor.png);
+}
+
+#html{
+    background-image: url(../resources/images/index/html.png);
+}
+
+#css{
+    background-image: url(../resources/images/index/css.png);
+}
+
+#js{
+    background-image: url(../resources/images/index/js.png);
+}
+
+.more{
+    color:black;
     text-decoration: none;
     position: absolute;
-    font-size: 1.7em;
+    font-size: 3vh;
     font-family: varela-round;
     bottom: -197vh;
     left: 45.5vw;
