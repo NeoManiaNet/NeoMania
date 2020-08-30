@@ -15,6 +15,7 @@
 }
 
 .first-main-container{
+    transition: height 0.4s ease-in-out;
     overflow:hidden;
     width: 100%;
     height: 330vh;
@@ -286,6 +287,18 @@ h3{
     font-family: vazgen;
 }
 
+  @media screen and (max-width: 1831px) {
+    .first-main-container{
+        height: 335vh;
+    }
+  }
+
+  @media screen and (max-width: 1521px) {
+    .first-main-container{
+        height: 350vh;
+    }
+  }
+
 @media screen and (max-width: 1275px) {
     .solution-item-content p {
         font-size: 2vh;
@@ -317,11 +330,30 @@ h3{
     }
 
     .first-main-container{
-        height: 300vh;
+        height: 290vh;
+    }
+
+    .flex-container div h4 {
+        font-size: 2.35vh;
+    }
+
+    .flex-container div p {
+        font-size: 2vh;
     }
   }
 
-@media screen and (max-width: 800px) {
+  
+  @media screen and (max-width: 1081px) {
+    .first-main-container{
+        height: 310vh;
+    }
+  }
+  
+@media screen and (max-width: 830px) {
+    .first-main-container{
+        height: 320vh;
+    }
+
     .header {
         margin-right: 5vh;
     }

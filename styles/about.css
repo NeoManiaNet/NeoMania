@@ -27,18 +27,17 @@ h3{
     position: relative;
     z-index: -1;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     margin-left: -1.0vh;
     margin-top: -0.3vw;
-    background-image: url(../resources/images/c095c302-3fbc-4ea0-833b-35088f7cb4aa.jpg);
+    background-image: url(../resources/images/about/about-page.jpg);
     background-size: cover;
-    /*filter: blur(2px);*/
 }
 
 .aboutp-header{
     position: relative;
     z-index: -1;
-    top: -90vh;
+    top: -39vh;
     width: 50vw;
     height: 100vh;
     margin: 0vh auto; 
@@ -120,13 +119,36 @@ h3{
     
 }
 .third-header{
+    background: linear-gradient(45deg,#20BF55, #01BAEF);
+    border-radius: 10px;
+    height: 10vh;
+    padding-top: 4vh;
     font-size: 5vh;
     color: black;
     font-family: varela-round;
-    margin-bottom: 2vh;
     text-align: center;
     
 }
+
+.arrow-down {
+    margin: auto;
+    width: 0; 
+    height: 0; 
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #20BFA7;
+  }
+
+  .arrow-down:first-child:before {
+    content:'';
+    position:absolute;
+    width:100%;
+    height:30px;
+    background:linear-gradient(to left, #c4268c, #9a0b72);
+    top:-30px;
+    left:0;
+}
+
 .second-container-content{
     font-size: 5vh;
     color: white;
@@ -138,7 +160,7 @@ h3{
 .third-container {
     width: 100%;
     height: 90vh;
-    margin-top:  10vh;
+    margin-top:  8vh;
     background-size: cover;
 }
 .third-container-item{
