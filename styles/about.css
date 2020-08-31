@@ -34,14 +34,16 @@ h3{
     background-size: cover;
 }
 
-.aboutp-header{
-    position: relative;
-    z-index: -1;
-    top: -39vh;
-    width: 50vw;
-    height: 100vh;
-    margin: 0vh auto; 
-    margin-top: 25vh;
+.about-header{
+    position: absolute;
+    font-size: 5vh;
+    color: white;
+    font-family: varela-round;
+    margin-bottom: 2vh;
+    text-align: center;
+    text-transform: uppercase;
+    top: 40vh;
+    left: 63vw;
 }
 
 .about-item{
@@ -107,7 +109,7 @@ h3{
 
 .second-container-item{
     transition-property: opacity, top;
-    transition-duration: 1.5s;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
     top: 5vh;
     opacity: 0;
@@ -118,7 +120,7 @@ h3{
     margin: 0px auto;
     border-radius: 10px;
     animation-name: shadow-annimation;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
@@ -198,7 +200,7 @@ h3{
 }
 
 .flex-container div{
-    transition-delay: 3s;
+    transition-delay: 2.5s;
     transition-property: opacity, margin-top;
     transition-duration: 1.5s;
     transition-timing-function: ease-out;
@@ -209,11 +211,11 @@ h3{
 }
 
 #innovation{
-    transition-delay: 4s;
+    transition-delay: 3s;
 }
 
 #commitment{
-    transition-delay: 5s;
+    transition-delay: 3.5s;
 }
 
 .flex-container div h4{
