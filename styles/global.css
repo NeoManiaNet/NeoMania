@@ -32,6 +32,16 @@ body
     }
 }
 
+@keyframes shadow-annimation{
+    from{
+        box-shadow:none;
+    }
+    to{
+        box-shadow:0px 0px 15px #aaaaaa;
+    }
+}
+
+
 #loading{
     animation-name: animate-show;
     animation-timing-function: ease-in-out;
@@ -111,9 +121,11 @@ p{
     cursor: default;
 }
 
-/* Navbar dark */
+/* Navbar */
 
-.navbar-container-dark{
+.navbar-container{
+    transition: 0.4s ease-out;
+    transition-property: height, background-color;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -123,7 +135,7 @@ p{
 
 .logo{
     transition: 0.4s ease-out;
-    transition-property: margin-top;
+    transition-property: margin-top, color, font-size;
     display: inline-block;
     font-size: 3.5vh;
     font-family: varela-round;
@@ -135,9 +147,8 @@ p{
 }
 
 .logo a{
+    color: white;
     text-decoration: none;
-
-    color:white;
 }
 
 .logo a img{
@@ -151,16 +162,15 @@ p{
     margin-left: 100px;
 }
 
-.navbar-dark{
+.navbar{
     display: block;
     width: 90%;
     height: 12vh;
     margin: 0px auto;
-    color: white;
     transition: all 0.4s ease-out;
 }
 
-.navbar-dark ul{
+.navbar ul{
     transition: margin-top 0.4s ease-out;
     display:  block;
     float: right;
@@ -170,22 +180,21 @@ p{
     list-style-type: none;
 }
 
-.navbar-dark ul li{
+.navbar ul li{
     display: inline-block;
     margin: 0 1vw;
     font-size: 2.5vh;
     font-family: varela-round;
     transition: all 0.4s ease-out;
-    color: white;
 }
 
-.navbar-dark ul li a{
+.navbar ul li a{
     text-decoration: none;
     transition: all 0.4s ease-out;
     color: white;
 }
 
-.navbar-dark ul li a:after {
+.navbar ul li a:after {
     transition: width 0.5s ease-out;
     content: "";
     display: block;
@@ -195,52 +204,36 @@ p{
     border-bottom: 2px solid white;
 }
 
-.navbar-dark ul li a:hover {
+.navbar ul li a:hover {
     cursor: pointer;
 }
 
-.navbar-dark ul li a:hover::after {
+.navbar ul li a:hover::after {
     width: 100%;
 }
 
 /* Navbar */
 
-.navbar-container-light{
-    transition: 0.4s ease-out;
-    transition-property: height, background-color;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: fixed;
-    z-index: 5;
-    top: 0px;
-    width: 100%;
+.navbar-min{
     height: 8vh;
     backdrop-filter: blur(4px);
 }
 
-.navbar-light .logo{
+.navbar-min .logo{
     margin-top: 0.5vh;
 }
 
-.navbar-light .logo img{
+.navbar-min .logo img{
     height: 7vh;
 }
 
-.navbar-light .logo a div{
+.navbar-min .logo a div{
     display: block;
     margin-top: -6.6vh;
     margin-left: 80px;
-    color: black;
 }
 
-.navbar-light{
-    display: block;
-    width: 90%;
-    height:8vh;
-    margin: 0px auto;
-    color: black;
-}
-
-.navbar-light ul{
+.navbar-min ul{
     transition: margin-top 0.4s ease-out;
     display: block;
     float: right;
@@ -253,20 +246,19 @@ p{
     width: 100% !important;
 }
 
-.navbar-light ul li{
+.navbar-min ul li{
     display: inline-block;
     margin: 0 1vw;
     font-size: 2.5vh;
     font-family: varela-round;
 }
 
-.navbar-light ul li a{
+.navbar-min ul li a{
     text-decoration: none;
-    color: black;
     transition: all 0.4s ease-out;
 }
 
-.navbar-light ul li a:after {
+.navbar-min ul li a:after {
     transition: width 0.5s ease-out;
     content: "";
     display: block;
@@ -274,15 +266,74 @@ p{
     width: 0px;
     padding-top: 3px;
     border-bottom: 2px solid;
-    color: black;
 }
 
-.navbar-light ul li a:hover {
+.navbar-min ul li a:hover {
     cursor: pointer;
 }
 
-.navbar-light ul li a:hover::after {
+.navbar-min ul li a:hover::after {
     width: 100%;
+}
+
+/* Light */
+
+.navbar-light{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark >div{
+    color: black;
+}
+
+.navbar-light .logo a{
+    color: black;
+}
+
+.navbar-light > div > .logo a div{
+    color: black;
+}
+
+.navbar-light > div > ul li{
+    color: black;
+}
+
+.navbar-light > div > ul li a{
+    color: black;
+}
+
+.navbar-light > div > ul li a:after {
+    color: black;
+}
+
+/* Dark */
+
+.navbar-dark{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-dark .logo a{
+    color: white;
+}
+
+.navbar-dark >div{
+    color: white;
+}
+
+.navbar-dark > div > .logo a div{
+    color: white;
+}
+
+.navbar-light > div > ul li{
+    color: white;
+}
+
+.navbar-dark > div > ul li a{
+    color: white;
+}
+
+.navbar-dark > div > ul li a:after {
+    color: white;
 }
 
 /* Navbar*/

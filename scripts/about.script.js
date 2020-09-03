@@ -10,6 +10,12 @@ window.addEventListener("scroll", function()
 
     console.log(scrollTop);
 
+	if (scrollTop > 50) {
+    	document.getElementById("navbar-container").classList.add("navbar-dark");
+	} else {
+		document.getElementById("navbar-container").classList.remove("navbar-dark");
+	}
+
 	if(scrollTop > 180 && !page.hasOurMissionLoaded)
 	{
 		page.hasOurMissionLoaded = true;
