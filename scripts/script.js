@@ -15,16 +15,15 @@ var app = {
 	},
 	submitForm: function(){
 		var xmlHttp = new XMLHttpRequest();
-		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", false ); // false for synchronous request
+		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", true);
 		xmlHttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 		xmlHttp.setRequestHeader('Access-Control-Allow-Origin', 'https://localhost:44337/');
 
 		xmlHttp.onreadystatechange = function() {
 			if (xmlHttp.readyState === 4) {
 				var response = xmlHttp.responseText;
-				console.log(response);
 		
-				if(response === "true")
+				if(xmlHttp.status === "200")
 				{
 					Swal.fire(
 						"Thank you for your application!" ,
@@ -34,8 +33,8 @@ var app = {
 				}else{
 					Swal.fire({
 						icon: 'error',
-						title: 'You got someting wrong',
-						text: 'Something went wrong!'
+						title: 'Something went wrong!',
+						text: response
 					  })
 				}
 			}
