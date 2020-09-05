@@ -17,6 +17,7 @@ var app = {
 		var xmlHttp = new XMLHttpRequest();
 		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", false ); // false for synchronous request
 		xmlHttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+		xmlHttp.setRequestHeader('Access-Control-Allow-Origin', 'https://localhost:44337/');
 		xmlHttp.send( JSON.stringify({
 			Name:document.getElementById("name").nodeValue,
 			EMail:document.getElementById("email").nodeValue,
