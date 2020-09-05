@@ -14,7 +14,16 @@ var app = {
 		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 	},
 	submitForm: function(){
-		document.getElementById("form").submit();
+		var xmlHttp = new XMLHttpRequest();
+		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", false ); // false for synchronous request
+		xmlHttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+		xmlHttp.send( JSON.stringify({
+			Name:document.getElementById("name").nodeValue,
+			EMail:document.getElementById("email").nodeValue,
+			PhoneNumber:document.getElementById("phone").nodeValue,
+			AdditionalMessage : document.getElementById("msg").nodeValue
+		}));
+		return xmlHttp.responseText;
 	}
 };
 
