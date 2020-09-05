@@ -14,17 +14,10 @@ var app = {
 		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 	},
 	submitForm: function(){
-		var form = document.getElementById("form");
 		var name = document.getElementById("name");
 		var email = document.getElementById("email");
 		var phone = document.getElementById("phone");
 		var msg = document.getElementById("msg");
-
-		if(!name.checkValidity() || !email.checkValidity() || !phone.checkValidity())
-		{
-			document.getElementById("submit").click();
-			return;
-		}
 
 		var xmlHttp = new XMLHttpRequest();
 		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", true);

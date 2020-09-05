@@ -125,7 +125,7 @@
         <div id="form" class="contact-form">
             <div class="form-container">
                 <h3>Let's talk</h3>
-                <form>
+                <form id="form" action="javascript:app.submitForm()">
                     <div class="field">
                         <input type="text" id="name" name="name" placeholder="." required>
                         <label for="name">Name*</label>
@@ -146,8 +146,7 @@
                         <label for="msg">Additional message</label>
                     </div>
                     
-                    <div class="btn submit" onclick="app.submitForm()">Submit</div>
-                    <input id="submit" type="submit" style="display:none"></input>
+                    <input id="submit" class="btn submit" type="submit" value="Submit"></input>
                 </form>
             </div>
         </div>
