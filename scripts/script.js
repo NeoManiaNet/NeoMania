@@ -14,6 +14,9 @@ var app = {
 		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 	},
 	submitForm: function(){
+
+
+
 		var xmlHttp = new XMLHttpRequest();
 		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", true);
 		xmlHttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
@@ -25,6 +28,11 @@ var app = {
 		
 				if(xmlHttp.status === "200")
 				{
+				    document.getElementById("name").value = "";
+					document.getElementById("email").value = "";
+					document.getElementById("phone").value = "";
+					document.getElementById("msg").value = "";
+					
 					Swal.fire(
 						"Thank you for your application!" ,
 						"We\'ll contact you soon.",
