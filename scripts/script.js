@@ -14,25 +14,33 @@ var app = {
 		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 	},
 	submitForm: function(){
+		var form = document.getElementById("form");
+		var name = document.getElementById("name");
+		var email = document.getElementById("email");
+		var phone = document.getElementById("phone");
+		var msg = document.getElementById("msg");
 
-
+		if(!name.checkValidity() || !email.checkValidity() || !phone.checkValidity())
+		{
+			document.getElementById("submit").click();
+			return;
+		}
 
 		var xmlHttp = new XMLHttpRequest();
 		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", true);
 		xmlHttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-		xmlHttp.setRequestHeader('Access-Control-Allow-Origin', 'https://localhost:44337/');
 
 		xmlHttp.onreadystatechange = function() {
 			if (xmlHttp.readyState === 4) {
 				var response = xmlHttp.responseText;
 		
-				if(xmlHttp.status === "200")
+				if(xmlHttp.status === 200)
 				{
-				    document.getElementById("name").value = "";
-					document.getElementById("email").value = "";
-					document.getElementById("phone").value = "";
-					document.getElementById("msg").value = "";
-					
+				    name.value = "";
+					email.value = "";
+					phone.value = "";
+					msg.value = "";
+
 					Swal.fire(
 						"Thank you for your application!" ,
 						"We\'ll contact you soon.",
@@ -49,10 +57,10 @@ var app = {
 		  }
 
 		xmlHttp.send( JSON.stringify({
-			Name:document.getElementById("name").value,
-			EMail:document.getElementById("email").value,
-			PhoneNumber:document.getElementById("phone").value,
-			AdditionalMessage : document.getElementById("msg").value
+			Name: name.value,
+			EMail: email.value,
+			PhoneNumber: phone.value,
+			AdditionalMessage : msg.value
 		}));
 	}
 };
