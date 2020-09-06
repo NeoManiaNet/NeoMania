@@ -16,6 +16,7 @@ var app = {
 	submitForm: function(){
 		Swal.fire({
 			title: "We're processing your request",
+			allowOutsideClick: false,
 			onBeforeOpen: () => {
 			  Swal.showLoading();
 			}
