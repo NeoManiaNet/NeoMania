@@ -417,14 +417,16 @@ p{
   margin-bottom: 0.7vh;
 }
 
-.submit{
+input[type=submit]{
     text-align: center;
     font-size: 3vh;
-    width: 115px;
     margin: 1vh auto;
     margin-top: 3.7vh;
     font-family: varela-round;
+    padding-left: 0;
+    padding-right: 0;
 }
+
 
 .footer{
     width: 100%;

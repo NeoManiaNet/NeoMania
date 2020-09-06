@@ -14,6 +14,14 @@ var app = {
 		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
 	},
 	submitForm: function(){
+		Swal.fire({
+			title: "We're processing your request",
+			onBeforeOpen: () => {
+			  Swal.showLoading();
+			}
+		  })
+
+
 		var name = document.getElementById("name");
 		var email = document.getElementById("email");
 		var phone = document.getElementById("phone");
@@ -26,7 +34,9 @@ var app = {
 		xmlHttp.onreadystatechange = function() {
 			if (xmlHttp.readyState === 4) {
 				var response = xmlHttp.responseText;
-		
+
+				Swal.hideLoading();
+
 				if(xmlHttp.status === 200)
 				{
 				    name.value = "";
