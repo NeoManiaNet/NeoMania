@@ -29,7 +29,7 @@ var app = {
 		var msg = document.getElementById("msg");
 
 		var xmlHttp = new XMLHttpRequest();
-		xmlHttp.open( "POST", "https://localhost:44337/Applications/Create", true);
+		xmlHttp.open( "POST", "https://localhost:44337/_api/Applications/Create", true);
 		xmlHttp.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
 		xmlHttp.onreadystatechange = function() {
