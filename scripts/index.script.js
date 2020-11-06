@@ -60,10 +60,10 @@ window.addEventListener("scroll", function()
 	{
 		page.hasAboutLoaded = true;
 
-		document.getElementById("who-we-are").style.marginTop = "17vh";
+		document.getElementById("who-we-are").style.marginTop = "0vh";
 		document.getElementById("who-we-are").style.opacity = "1";
 
-		document.getElementById("what-we-do").style.marginTop = "55vh";
+		document.getElementById("what-we-do").style.marginTop = "0vh";
 		document.getElementById("what-we-do").style.opacity = "1";
 
 		document.getElementById("what-we-do-first-part").style.marginTop = "2vh";

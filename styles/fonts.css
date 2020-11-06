@@ -1,4 +1,10 @@
 @font-face {
+  font-family: monteserrat;
+  src: url(../resources/fonts/Monteserrat.woff2);
+}
+
+
+@font-face {
   font-family: bavro-regular;
   src: url(../resources/fonts/Bavro-Regular.otf);
 }
@@ -13,6 +19,6 @@
   src: url(../resources/fonts/VarelaRound-Regular.ttf);
 }
 @font-face {
-  font-family: vazgen;
+  font-family: ibmp-plex-sans;
   src: url(../resources/fonts/IBMPlexSans-Light.ttf);
 }
