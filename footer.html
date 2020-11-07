@@ -1,0 +1,58 @@
+<div class="footer">
+    <div class="contact-form">
+        <div class="form-container">
+            <h3>Let's talk</h3>
+            <form id="form" action="javascript:app.submitForm()">
+                <div class="field">
+                    <input type="text" id="name" name="name" placeholder="." required>
+                    <label for="name">Name*</label>
+                </div>
+                    
+                <div class="field">
+                    <input type="email" id="email" name="email" placeholder="." required>
+                    <label for="email">E-mail address*</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" id="phone" name="phone" placeholder="." pattern="^\+[0-9']*" required>
+                    <label for="phone">Phone number*</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" id="msg" name="msg" placeholder=".">
+                    <label for="msg">Additional message</label>
+                </div>
+                
+                <input id="submit" class="btn" type="submit" value="Submit"></input>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <ul>
+            <li style="font-weight: bold"><a href="solutions.html">Solutions</a></li>
+            <li><a href="javascript:app.redirectAndScrollTo('solutions.html','web')">Enterprise Web Development</a></li>
+            <li><a href="javascript:app.redirectAndScrollTo('solutions.html','windows')">Desktop Application Development</a></li>
+            <li><a href="javascript:app.redirectAndScrollTo('solutions.html','consulting')">IT Consulting</a></li>
+        </ul>
+
+        <ul>
+            <li style="font-weight: bold">Contact info</li>
+            <li><a target="_blank" href="https://www.google.com/maps/place/Yerevan,+Armenia/@40.1535005,44.4185274,12z/data=!3m1!4b1!4m5!3m4!1s0x406aa2dab8fc8b5b:0x3d1479ae87da526a!8m2!3d40.1872023!4d44.515209?hl=en"><i class="fas fa-map-marker-alt fa-sm" style="margin-left: 0.15vw"></i> Yerevan, Armenia</a></li>
+            <li><i class="fas fa-phone fa-sm"></i> +374 XX XXX XXX</li>
+            <li><a href="mailto:info@neomania.net"><i class="fas fa-envelope fa-sm" aria-hidden="true"></i> info@neomania.net</a></li>
+        </ul>
+
+        <ul>
+            <li style="font-weight: bold; margin-top: 1vh;">Social</li>
+            <li class="social-container">
+                <div><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a></div>
+                <div><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer-bottom">
+    <div class="footer-bottom-container">© NeoMania LLC / <a href="#">Privacy Policy</a></div>
+</div>
