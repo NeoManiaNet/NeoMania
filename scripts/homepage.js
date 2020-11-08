@@ -50,6 +50,7 @@ var homepage = {
 			}
 	},
 	initialize: function(){
+		document.documentElement.scrollTop = 0;
 		this.handleMediaElementsLoad();
 		this.resetInterval();
 		window.addEventListener("scroll", homepage.handleScroll);

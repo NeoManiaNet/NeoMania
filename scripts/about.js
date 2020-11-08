@@ -36,9 +36,12 @@ var about = {
 		}
 	},
 	initialize: function(){
+		document.documentElement.scrollTop = 0;
 		window.addEventListener("scroll", about.handleScroll);
 	},
 	stop:function(){
 		window.removeEventListener("scroll", about.handleScroll);
+		this.hasOurMissionLoaded = false;
+		this.hasCoreValuesLoaded = false;
 	},
 };

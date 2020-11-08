@@ -9,6 +9,7 @@ var solutions = {
 		}
 	},
 	initialize: function(){
+		document.documentElement.scrollTop = 0;
 		window.addEventListener("scroll", solutions.handleScroll);
 	},
 	stop:function(){
