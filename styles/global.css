@@ -8,6 +8,10 @@ body
     overflow-x: hidden;
 }
 
+.hide-overflows{
+    overflow: hidden !important;
+}
+
 .hide{
     opacity: 0;
 }

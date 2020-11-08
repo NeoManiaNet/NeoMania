@@ -30,6 +30,7 @@ app = {
             loading.style.opacity = 0;
             setTimeout(()=>{
               content.classList.add("animate-show");
+              document.querySelector("body").classList.remove("hide-overflows");
             },200);
           },400);
         },1000);
@@ -63,7 +64,7 @@ app = {
         this.loadComponent(page, "main-body", (r)=> {
           this.loadComponent("footer.html","content",(r)=>{
             if(onloaded)
-            onloaded(r);
+              onloaded(r);
 
             homepage.initialize();
           });

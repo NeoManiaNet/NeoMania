@@ -4,7 +4,7 @@ var homepage = {
 	slideInterval: null,
 	initialize: function(){
 		window.onload = function(){
-			page.resetInterval();
+			this.resetInterval();
 		}
 		
 		window.addEventListener("scroll", function() 
@@ -26,9 +26,9 @@ var homepage = {
 				document.getElementById("navbar-container").classList.add("navbar-dark");
 			}
 		
-			if(scrollTop > 300 && !page.hasAboutLoaded)
+			if(scrollTop > 300 && !this.hasAboutLoaded)
 			{
-				page.hasAboutLoaded = true;
+				this.hasAboutLoaded = true;
 		
 				document.getElementById("who-we-are").style.marginTop = "0vh";
 				document.getElementById("who-we-are").style.opacity = "1";
@@ -67,7 +67,7 @@ var homepage = {
 			clearInterval(this.slideInterval);
 
 			this.slideInterval = setInterval(function(){
-				page.slide(true, false);
+				this.slide(true, false);
 			}, 7000);
 	}
 };
