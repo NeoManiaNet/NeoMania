@@ -56,17 +56,18 @@ app = {
         }
 
         if(onloaded)
-          onloaded();
+          onloaded(result);
       })
     },
     loadPage : function(page, onloaded){
       let content = document.getElementById("content");
-      this.loadComponent("header.html","content");
+      this.loadComponent("header.html","content",(r)=>console.log(r));
       content.innerHTML += "<div id='main-body'></div>";
-      this.loadComponent("footer.html","content");
-      this.loadComponent(page, "main-body", ()=> {
+      this.loadComponent("footer.html","content",(r)=>console.log(r));
+
+      this.loadComponent(page, "main-body", (r)=> {
         if(onloaded)
-          onloaded();
+          onloaded(r);
       });
     },
     redirectAndScrollTo: function(url, elementName){
