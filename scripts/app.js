@@ -34,10 +34,7 @@ app = {
           },400);
         },1000);
 
-        if(result){
-            content.innerHTML += result;
-        }
-        else{
+        if(!result){
             content.innerHTML = "Sorry we're having trouble. Please try again later :)";
         }
     });
