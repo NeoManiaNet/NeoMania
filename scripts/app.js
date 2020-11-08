@@ -51,12 +51,9 @@ app = {
       }
     },
     loadPage : function(page, onloaded){
-      if(this.currentPage != "")
-      {
-        this.currentPage = page;
-        if(window[page].stop)
-          window[page].stop();
-      }
+      this.currentPage = page;
+      if(window[page].stop)
+        window[page].stop();
       
       let content = document.getElementById("main-body");
       content.innerHTML = "";

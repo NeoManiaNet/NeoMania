@@ -36,7 +36,6 @@ var about = {
 		}
 	},
 	initialize: function(){
-		this.resetInterval();
 		window.addEventListener("scroll", about.handleScroll);
 	},
 	stop:function(){

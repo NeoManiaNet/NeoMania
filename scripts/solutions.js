@@ -9,7 +9,6 @@ var solutions = {
 		}
 	},
 	initialize: function(){
-		this.resetInterval();
 		window.addEventListener("scroll", solutions.handleScroll);
 	},
 	stop:function(){
