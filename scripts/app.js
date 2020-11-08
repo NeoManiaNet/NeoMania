@@ -1,23 +1,21 @@
 app = {
     baseUrl : "https://neomanianet.github.io/NeoMania/",
     get : function(url, onloaded){
-        // let xhr = new XMLHttpRequest();
-        // xhr.open("GET", url, true);
-        // xhr.onload = function (e) {
-        //   if (xhr.readyState === 4) {
-        //     if (xhr.status === 200) {
-        //         onloaded(xhr.responseText);
-        //     } else {
-        //       console.error(xhr.statusText);
-        //     }
-        //   }
-        // };
-        // xhr.onerror = function (e) {
-        //   console.error(xhr.statusText);
-        // };
-        // xhr.send(null);
-
-        onloaded("Testtttt");
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onload = function (e) {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                onloaded(xhr.responseText);
+            } else {
+              console.error(xhr.statusText);
+            }
+          }
+        };
+        xhr.onerror = function (e) {
+          console.error(xhr.statusText);
+        };
+        xhr.send(null);
     },
     start : function(){
       this.loadPage("homepage.html", (result)=>{
