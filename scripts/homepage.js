@@ -54,7 +54,8 @@ var homepage = {
 		this.resetInterval();
 		window.addEventListener("scroll", homepage.handleScroll);
 	},
-	stop:function(){
+	stop: function(){
+		console.log("cleared");
 		clearInterval(this.slideInterval);
 		homepage.hasAboutLoaded = false;
 		window.removeEventListener("scroll", homepage.handleScroll);

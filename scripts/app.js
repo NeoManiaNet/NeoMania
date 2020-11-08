@@ -51,9 +51,10 @@ app = {
       }
     },
     loadPage : function(page, onloaded){
+      if(this.currentPage && window[this.currentPage].stop)
+        window[this.currentPage].stop();
+
       this.currentPage = page;
-      if(window[page].stop)
-        window[page].stop();
       
       let content = document.getElementById("main-body");
       content.innerHTML = "";
@@ -80,7 +81,7 @@ app = {
     },
     start : function(){
       this.loadLayout(()=>{
-        this.loadPage("homepage",(result)=>{
+        this.loadPage("homepage", (result)=>{
           homepage.onloaded = ()=>{
             let content = document.getElementById("content");
             let loading = document.getElementById("loading");

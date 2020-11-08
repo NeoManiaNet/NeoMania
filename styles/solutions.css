@@ -145,37 +145,37 @@ h3{
     text-align: center;
 }
 
-.flex-container{
+.solutionsflex-container{
     margin-top: 3vh;
     display: flex;
 }
 
-.flex-container div{
+.solutionsflex-container div{
     width: 33.3%;
     margin-right: 2vw;
 }
 
-.flex-container div h4{
+.solutionsflex-container div h4{
     margin: 2vh;
     font-size: 2.9vh;
     font-family: varela-round;
     text-align: center;
 }
 
-.flex-container div p{
+.solutionsflex-container div p{
     font-size: 2.5vh;
     font-family: varela-round;
     padding: 0px 1vw;
 }
 
   @media screen and (max-width: 1831px) {
-    .first-main-container{
+    .solutions-first-main-container{
         height: 335vh;
     }
   }
 
   @media screen and (max-width: 1521px) {
-    .first-main-container{
+    .solutions-first-main-container{
         height: 350vh;
     }
   }
@@ -198,7 +198,7 @@ h3{
         margin-bottom: 8vh;
     }
 
-    .flex-container {
+    .solutions-flex-container {
         height: 10vh;
     }
 
@@ -210,28 +210,28 @@ h3{
         font-size: 2.3vh;
     }
 
-    .first-main-container{
+    .solutions-first-main-container{
         height: 290vh;
     }
 
-    .flex-container div h4 {
+    .solutions-flex-container div h4 {
         font-size: 2.35vh;
     }
 
-    .flex-container div p {
+    .solutions-flex-container div p {
         font-size: 2vh;
     }
   }
 
   
   @media screen and (max-width: 1081px) {
-    .first-main-container{
+    .solutions-first-main-container{
         height: 310vh;
     }
   }
   
 @media screen and (max-width: 830px) {
-    .first-main-container{
+    .solutions-first-main-container{
         height: 320vh;
     }
 
