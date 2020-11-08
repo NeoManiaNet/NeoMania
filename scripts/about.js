@@ -4,8 +4,6 @@ var about = {
 	handleScroll:function(){
 		var scrollTop = document.documentElement.scrollTop;
 
-		console.log(scrollTop);
-
 		if (scrollTop > 50) {
 			document.getElementById("navbar-container").classList.add("navbar-dark");
 		} else {

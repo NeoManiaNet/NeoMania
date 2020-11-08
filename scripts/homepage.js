@@ -5,8 +5,6 @@ var homepage = {
 	handleScroll:function(){
 			var scrollTop = document.documentElement.scrollTop;
 		
-			console.log(scrollTop);
-		
 			if (scrollTop < 5) {
 				document.getElementById("navbar-container").classList.remove("navbar-light");
 				document.getElementById("navbar-container").classList.remove("navbar-dark");

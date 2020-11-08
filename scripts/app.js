@@ -73,8 +73,8 @@ app = {
       content.classList.add("animate-hide");
 
       this.loadPage(name,(result)=>{
-          loadingContianer.classList.remove("animate-hide");
-          loadingContianer.classList.add("animate-show");
+        content.classList.remove("animate-hide");
+        content.classList.add("animate-show");
           
         if(!result){
             content.innerHTML = "Sorry we're having trouble. Please try again later :)";
