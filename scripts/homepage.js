@@ -2,13 +2,7 @@ var homepage = {
 	hasAboutLoaded: false,
 	slideIndex: 0,
 	slideInterval: null,
-	initialize: function(){
-		window.onload = function(){
-			homepage.resetInterval();
-		}
-		
-		window.addEventListener("scroll", function() 
-		{
+	handleScroll:function(){
 			var scrollTop = document.documentElement.scrollTop;
 		
 			console.log(scrollTop);
@@ -26,9 +20,9 @@ var homepage = {
 				document.getElementById("navbar-container").classList.add("navbar-dark");
 			}
 		
-			if(scrollTop > 300 && !this.hasAboutLoaded)
+			if(scrollTop > 300 && !homepage.hasAboutLoaded)
 			{
-				this.hasAboutLoaded = true;
+				homepage.hasAboutLoaded = true;
 		
 				document.getElementById("who-we-are").style.marginTop = "0vh";
 				document.getElementById("who-we-are").style.opacity = "1";
@@ -39,7 +33,15 @@ var homepage = {
 				document.getElementById("what-we-do-first-part").style.marginTop = "2vh";
 				document.getElementById("what-we-do-first-part").style.opacity = "1";
 			}
-		});
+	},
+	initialize: function(){
+		this.resetInterval();
+		window.addEventListener("scroll", homepage.handleScroll);
+	},
+	stop:function(){
+		clearInterval(this.slideInterval);
+		homepage.hasAboutLoaded = false;
+		window.removeEventListener("scroll", homepage.handleScroll);
 	},
 	slide: function (toRight, fromButton){
 			if(fromButton === true)
