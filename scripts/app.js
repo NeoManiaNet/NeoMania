@@ -59,13 +59,18 @@ app = {
     },
     loadPage : function(page, onloaded){
       let content = document.getElementById("content");
-      this.loadComponent("header.html","content",(r)=>console.log(r));
-      content.innerHTML += "<div id='main-body'></div>";
-      this.loadComponent("footer.html","content",(r)=>console.log(r));
+      this.loadComponent("header.html","content",(r)=>{
+        header.initialize();
+        content.innerHTML += "<div id='main-body'></div>";
+        
+        this.loadComponent(page, "main-body", (r)=> {
+          this.loadComponent("footer.html","content",(r)=>{
+            if(onloaded)
+            onloaded(r);
 
-      this.loadComponent(page, "main-body", (r)=> {
-        if(onloaded)
-          onloaded(r);
+            homepage.initialize();
+          });
+        });
       });
     },
     redirectAndScrollTo: function(url, elementName){
