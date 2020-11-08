@@ -55,7 +55,6 @@ var homepage = {
 		window.addEventListener("scroll", homepage.handleScroll);
 	},
 	stop: function(){
-		console.log("cleared");
 		clearInterval(this.slideInterval);
 		homepage.hasAboutLoaded = false;
 		window.removeEventListener("scroll", homepage.handleScroll);

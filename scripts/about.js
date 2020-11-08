@@ -10,17 +10,17 @@ var about = {
 			document.getElementById("navbar-container").classList.remove("navbar-dark");
 		}
 
-		if(scrollTop > 180 && !page.hasOurMissionLoaded)
+		if(scrollTop > 180 && !about.hasOurMissionLoaded)
 		{
-			page.hasOurMissionLoaded = true;
+			about.hasOurMissionLoaded = true;
 
 			document.getElementById("our-mission").style.top = "0";
 			document.getElementById("our-mission").style.opacity = "1";
 		}
 		
-		if(scrollTop > 580 && !page.hasCoreValuesLoaded)
+		if(scrollTop > 580 && !about.hasCoreValuesLoaded)
 		{
-			page.hasCoreValuesLoaded = true;
+			about.hasCoreValuesLoaded = true;
 
 			document.getElementById("core-values").style.top = "0";
 			document.getElementById("core-values").style.opacity = "1";
