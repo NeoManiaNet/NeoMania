@@ -2,6 +2,23 @@ var homepage = {
 	hasAboutLoaded: false,
 	slideIndex: 0,
 	slideInterval: null,
+	mediaElementsCount : 1,
+	loadedMediaElementsCount : 0,
+	onloaded : undefined,
+	changeMediaElementLoadState : function(){
+		this.loadedMediaElementsCount++;
+
+		if(this.loadedMediaElementsCount == this.mediaElementsCount){
+			if(this.onloaded)
+				this.onloaded();
+		}
+	},
+	handleMediaElementsLoad : function(){
+		let video = document.getElementById("background-video");
+		video.onloadeddata = ()=>{
+			homepage.changeMediaElementLoadState();
+		};
+	},
 	handleScroll:function(){
 			var scrollTop = document.documentElement.scrollTop;
 		
@@ -33,6 +50,7 @@ var homepage = {
 			}
 	},
 	initialize: function(){
+		this.handleMediaElementsLoad();
 		this.resetInterval();
 		window.addEventListener("scroll", homepage.handleScroll);
 	},

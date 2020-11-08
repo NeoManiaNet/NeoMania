@@ -81,26 +81,29 @@ app = {
     start : function(){
       this.loadLayout(()=>{
         this.loadPage("homepage",(result)=>{
-          let content = document.getElementById("content");
-          let loading = document.getElementById("loading");
-          let loadingContianer = document.getElementById("loading-container");
-
-          setTimeout(()=>{
-            loadingContianer.classList.remove("animate-show");
-            loadingContianer.classList.add("animate-hide");
-            
-              setTimeout(()=>{
-                loading.style.opacity = 0;
-                setTimeout(()=>{
-                  content.classList.add("animate-show");
-                  document.querySelector("body").classList.remove("hide-overflows");
-                },200);
-              },400);
-            },500);
+          homepage.onloaded = ()=>{
+            let content = document.getElementById("content");
+            let loading = document.getElementById("loading");
+            let loadingContianer = document.getElementById("loading-container");
   
-          if(!result){
-              content.innerHTML = "Sorry we're having trouble. Please try again later :)";
-          }
+            setTimeout(()=>{
+              loadingContianer.classList.remove("animate-show");
+              loadingContianer.classList.add("animate-hide");
+              
+                setTimeout(()=>{
+                  loading.style.opacity = 0;
+                  setTimeout(()=>{
+                    content.classList.add("animate-show");
+                    document.querySelector("body").classList.remove("hide-overflows");
+                  },200);
+                },400);
+              },500);
+    
+            if(!result){
+                content.innerHTML = "Sorry we're having trouble. Please try again later :)";
+            }
+
+          };
         });
       });
     },
