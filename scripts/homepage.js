@@ -67,7 +67,7 @@ var homepage = {
 		clearInterval(this.slideInterval);
 
 		this.slideInterval = setInterval(function(){
-			this.slide(true, false);
+			homepage.slide(true, false);
 		}, 7000);
 	}
 };
