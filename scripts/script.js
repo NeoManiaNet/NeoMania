@@ -1,18 +1,4 @@
 var app = {
-	redirectAndScrollTo: function(url, elementName){
-		window.location.href = url + "#" + elementName;},
-	scrollTo: function(elementName){
-		var element = document.getElementById(elementName);
-		var screenPosition = element.getBoundingClientRect();
-		
-		window.scrollTo({ top: document.documentElement.scrollTop + screenPosition.top, behavior: 'smooth' });
-	},
-	scrollToTop: function(){
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	},
-	scrollToBottom: function(){
-		window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-	},
 	submitForm: function(){
 		Swal.fire({
 			title: "We're processing your request",

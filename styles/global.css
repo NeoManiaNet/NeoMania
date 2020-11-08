@@ -62,14 +62,39 @@ p{
     cursor: default;
 }
 
+.animate-show{
+    animation-name: animate-show;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animate-hide{
+    animation-name: animate-hide;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;  
+}
+
 @keyframes animate-show{
     from{
-        margin-top: 2vh;
+        margin-top: 100px;
         opacity: 0;
     }
     to{
         margin-top: 0;
         opacity: 1;
+    }
+}
+
+@keyframes animate-hide{
+    from{
+        margin-bottom: 0;
+        opacity: 1;
+    }
+    to{
+        margin-bottom: 200px;
+        opacity: 0;
     }
 }
 
