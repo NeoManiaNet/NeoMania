@@ -4,7 +4,7 @@ var homepage = {
 	slideInterval: null,
 	initialize: function(){
 		window.onload = function(){
-			this.resetInterval();
+			homepage.resetInterval();
 		}
 		
 		window.addEventListener("scroll", function() 
@@ -43,7 +43,7 @@ var homepage = {
 	},
 	slide: function (toRight, fromButton){
 			if(fromButton === true)
-			this.resetInterval();
+				this.resetInterval();
 
 			if(toRight === true)
 				this.slideIndex++;
@@ -63,11 +63,11 @@ var homepage = {
 				document.getElementById("carousel").style.marginLeft = "0";
 		}
 	},
-	resetInterval: function ResetInterval(){
-			clearInterval(this.slideInterval);
+	resetInterval: function (){
+		clearInterval(this.slideInterval);
 
-			this.slideInterval = setInterval(function(){
-				this.slide(true, false);
-			}, 7000);
+		this.slideInterval = setInterval(function(){
+			this.slide(true, false);
+		}, 7000);
 	}
 };
